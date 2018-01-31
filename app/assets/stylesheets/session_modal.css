@@ -1,0 +1,8 @@
+.Session-form {
+  position: absolute;
+  color: white;
+  display: flex;
+  z-index: 1;
+  margin-left: 40%;
+  margin-top: 30%;
+}

@@ -6,7 +6,6 @@ import {AuthRoute} from '../util/route_util';
 
 const App = () => (
   <div>
-    <h1>P500X</h1>
     <WelcomeContainer/>
 
     <AuthRoute path="/login" component={SessionFormContainer}/>

@@ -41,7 +41,9 @@ class SessionForm extends React.Component {
     return (
       <div className="Session-form">
           <form onSubmit={this.handleSubmit} className="login-form">
-          <h1 className="session-label">{this.props.formType}</h1>
+          <h1 className="session-label">{
+          this.props.formType === 'Login' ? 'Welcome Back!' : 'Join Us'}</h1>
+
           <label className="errors">
             {
               this.props.errors.map((err, idx) => <ul key={idx}>{err}</ul>)

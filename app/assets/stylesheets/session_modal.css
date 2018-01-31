@@ -2,9 +2,7 @@
   position: absolute;
   border-radius: 25px;
   color: white;
-  background-color: black;
-  opacity: 0.7;
-  filter: alpha(opacity=50);
+  background-color: rgba(0,0,0,0.7);
   display: flex;
   z-index: 1;
   margin-left: 35%;
@@ -21,10 +19,10 @@
   text-decoration: none;
   /* font-family: "Brush Script MT", cursive; */
   font-size: 14px;
-  font-family: "Open Sans"
+  font-family: "Open Sans";
 }
 .password, .username {
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Open Sans";
   font-size: 15px;
   display: flex;
 }
@@ -46,9 +44,10 @@
 }
 
 .session-label {
-  font-family: "Open Sans";
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   display: flex;
   justify-content: center;
+  font-size: 25px;
 }
 
 .errors {

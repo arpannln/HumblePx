@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 10%;
+  height: 7%;
   background-color: rgba(160,32,240,0.4);
   margin-top: 10px;
 }
@@ -26,7 +26,7 @@
   color: white;
   display: flex;
   margin-left: 100px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .login-signup{
@@ -42,7 +42,7 @@
   display: flex;
   color: white;
   padding-right: 20px;
-  padding-top: 22px;
+  padding-top: 12px;
 }
 
 body {

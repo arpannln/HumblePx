@@ -8,8 +8,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch, OwnProps) => {
-  const formType = OwnProps.location.pathname === '/login' ? 'login' : 'signup';
-  const processForm = formType === 'login' ? login : signup;
+  const formType = OwnProps.location.pathname === '/login' ? 'Login' : 'Signup';
+  const processForm = formType === 'Login' ? login : signup;
   return {
     processForm: user => dispatch(processForm(user)),
     formType

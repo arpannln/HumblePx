@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const sessionLinks = (props) => (
+const sessionLinks = (removeAllErrors) => (
   <div>
   <div className="welcome-page">
    <div className="welcome-banner">
     <h1 className="logo">Humble</h1>
     <nav className="login-signup">
-      <Link className="login-button" to="/login">Login</Link> <br/>
-      <Link className="signup-button" to="/signup">Sign up!</Link>
+      <Link className="login-button" to="/login" onClick={removeAllErrors}>Login</Link> <br/>
+      <Link className="signup-button" to="/signup" onClick={removeAllErrors}>Sign up!</Link>
     </nav>
    </div>
   </div>
@@ -27,8 +27,8 @@ const personalWelcome = (currentUser, logout) => (
 );
 
 
-const Welcome = ({currentUser, logout}) => (
-  currentUser ? personalWelcome(currentUser, logout) : sessionLinks()
+const Welcome = ({currentUser, logout, removeAllErrors}) => (
+  currentUser ? personalWelcome(currentUser, logout) : sessionLinks(removeAllErrors)
 );
 
 export default Welcome;

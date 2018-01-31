@@ -18,7 +18,7 @@
   color: white;
   display: flex;
   margin-left: 100px;
-
+  margin-top: 10px;
 }
 
 .login-signup{
@@ -27,8 +27,9 @@
 }
 
 .login-button, .signup-button {
-  font-family: "Brush Script MT", cursive;
-  font-size: 30px;
+  /* font-family: "Brush Script MT", cursive; */
+  font-family: "Open Sans";
+  font-size: 20px;
   text-decoration: none;
   display: flex;
   color: white;

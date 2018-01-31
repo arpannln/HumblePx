@@ -31,9 +31,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'Login') {
-      return <Link className="option" to="/signup">sign up instead!</Link>;
+      return <Link className="option" to="/signup">New User? Sign Up</Link>;
     } else {
-      return <Link className="option" to="/login">login instead</Link>;
+      return <Link className="option" to="/login">Registered? Login</Link>;
     }
   }
 
@@ -42,6 +42,11 @@ class SessionForm extends React.Component {
       <div className="Session-form">
           <form onSubmit={this.handleSubmit} className="login-form">
           <h1 className="session-label">{this.props.formType}</h1>
+          <label className="errors">
+            {
+              this.props.errors.map((err, idx) => <ul key={idx}>{err}</ul>)
+            }
+          </label>
           <label className="username">Username:
             <input type="text"
               value={this.state.username}
@@ -56,11 +61,6 @@ class SessionForm extends React.Component {
               onChange={this.update('password')}
               className="login"
               />
-          </label>
-          <label className="errors">
-            {
-              this.props.errors.map((err, idx) => <ul key={idx}>{err}</ul>)
-            }
           </label>
           <br/>
           <h3>{this.navLink()}</h3>

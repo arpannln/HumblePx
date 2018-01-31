@@ -3,9 +3,11 @@
   border-radius: 25px;
   color: white;
   background-color: black;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
   display: flex;
   z-index: 1;
-  margin-left: 32%;
+  margin-left: 35%;
   margin-top: 20%;
   margin-right: 5%;
   margin-bottom: 10%;
@@ -17,20 +19,43 @@
 .option {
   color: white;
   text-decoration: none;
-  font-family: "Brush Script MT", cursive;
-  font-size: 30px;
+  /* font-family: "Brush Script MT", cursive; */
+  font-size: 14px;
+  font-family: "Open Sans"
 }
 .password, .username {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-size: 15px;
+  display: flex;
+}
+
+.username {
+  margin-top: 15px;
+}
+.password {
+  margin-left: 4px;
 }
 
 .submit-button {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-size: 15px;
+  display: flex;
+  margin-left: 80px;
+  background-color: blue;
+  color: white;
 }
 
 .session-label {
+  font-family: "Open Sans";
   display: flex;
   justify-content: center;
+}
+
+.errors {
+  display: flex;
+  color: red;
+  font-family: "Open Sans";
+  font-size: 10px;
+  margin-right: 10px;
+  margin-top: -20px;
 }

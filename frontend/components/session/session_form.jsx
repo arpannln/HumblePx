@@ -23,6 +23,7 @@ class SessionForm extends React.Component {
     }
   }
 
+
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
@@ -41,12 +42,13 @@ class SessionForm extends React.Component {
     return (
       <div className="Session-form">
           <form onSubmit={this.handleSubmit} className="login-form">
+          <Link className="close-form" to="/">X</Link>
           <h1 className="session-label">{
           this.props.formType === 'Login' ? 'Welcome Back!' : 'Join Us'}</h1>
 
           <label className="errors">
             {
-              <ul>{this.props.errors[0]}</ul>
+              <ul>{this.props.errors ? this.props.errors[0] : ""}</ul>
             }
           </label>
           <label className="username">Username:

@@ -13,7 +13,7 @@ const sessionLinks = (props) => (
    </div>
   </div>
   <h1 className="welcome-greeting">Sit Down, <br/> &nbsp; &nbsp;&nbsp;
-    Explore Humble...</h1>
+    Explore<p className="welcome-greeting-logo">Humble...</p></h1>
   </div>
 );
 

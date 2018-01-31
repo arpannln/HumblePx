@@ -1,7 +1,7 @@
 .welcome-page{
   position: absolute;
   display: flex;
-  background: url(https://images.unsplash.com/photo-1504556106489-6d450910aeb3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9c334f48cccce5ce97e49df222394ee8&auto=format&fit=crop&w=1067&q=80) no-repeat center center fixed;
+  background: url(https://images.unsplash.com/photo-1508614279739-01c22ab4b30a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fb8bfee9e704c357955978bf9d147340&auto=format&fit=crop&w=1510&q=80) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,8 +17,11 @@
   justify-content: space-between;
   width: 100%;
   height: 7%;
-  background-color: rgba(138,43,226,0.4);
+  /* background-color: rgba(138,43,226,0.4); */
+  background-color: rgba(0,0,255,0.6);
   margin-top: 10px;
+  /* border-top: 1px solid lightblue; */
+  border-bottom: 1px solid lightblue;
 }
 
 /* .welcome-greeting{
@@ -49,6 +52,15 @@
   animation: type 6s steps(60, end);
 }
 
+.welcome-greeting-logo{
+  font-family: "Brush Script MT", cursive;
+  font-size: 65px;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 51px;
+
+}
+
 @keyframes type{
   from { width: 0; }
 }
@@ -77,6 +89,11 @@
   padding-right: 20px;
   padding-top: 12px;
 }
+
+.login-button:hover, .signup-button:hover {
+  color: lightblue;
+}
+
 
 body {
   padding: 0px;

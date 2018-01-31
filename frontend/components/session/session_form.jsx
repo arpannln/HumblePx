@@ -46,7 +46,7 @@ class SessionForm extends React.Component {
 
           <label className="errors">
             {
-              this.props.errors.map((err, idx) => <ul key={idx}>{err}</ul>)
+              <ul>{this.props.errors[0]}</ul>
             }
           </label>
           <label className="username">Username:

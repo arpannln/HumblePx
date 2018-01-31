@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const sessionLinks = () => (
+const sessionLinks = (props) => (
+  <div>
   <div className="welcome-page">
    <div className="welcome-banner">
     <h1 className="logo">Humble</h1>
@@ -11,7 +12,9 @@ const sessionLinks = () => (
     </nav>
    </div>
   </div>
-
+  <h1 className="welcome-greeting">Sit Down, <br/> &nbsp; &nbsp;&nbsp;
+    Explore Humble...</h1>
+  </div>
 );
 
 const personalWelcome = (currentUser, logout) => (

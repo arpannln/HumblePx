@@ -9,6 +9,7 @@ class SessionForm extends React.Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.currentPath = undefined;
   }
 
   update(field) {
@@ -23,7 +24,12 @@ class SessionForm extends React.Component {
     }
   }
 
-
+  componentDidUpdate() {
+    if (this.props.history.location.pathname !== this.currentPath){
+      this.currentPath = this.props.history.location.pathname;
+      this.props.removeAllErrors();
+    }
+  }
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
@@ -32,9 +38,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'Login') {
-      return <Link className="option" to="/signup">New User? Sign Up</Link>;
+      return <Link className="option" to="/signup" onClick={this.props.removeAllErrors}>New User? Sign Up</Link>;
     } else {
-      return <Link className="option" to="/login">Registered? Login</Link>;
+      return <Link className="option" to="/login" onClick={this.props.removeAllErrors}>Registered? Login</Link>;
     }
   }
 

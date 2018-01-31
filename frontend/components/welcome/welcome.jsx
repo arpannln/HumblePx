@@ -14,6 +14,7 @@ const sessionLinks = (props) => (
   </div>
   <h1 className="welcome-greeting">Sit Down, <br/> &nbsp; &nbsp;&nbsp;
     Explore<p className="welcome-greeting-logo">Humble...</p></h1>
+    
   </div>
 );
 

@@ -1,7 +1,7 @@
 .welcome-page{
   position: absolute;
   display: flex;
-  background: url(https://images.unsplash.com/photo-1508614279739-01c22ab4b30a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fb8bfee9e704c357955978bf9d147340&auto=format&fit=crop&w=1510&q=80) no-repeat center center fixed;
+  background: url(https://images.unsplash.com/photo-1446052377488-d40ee7263458?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1e556b9eca4d41dd11d8c22739519f27&auto=format&fit=crop&w=1498&q=80) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,10 +18,10 @@
   width: 100%;
   height: 7%;
   /* background-color: rgba(138,43,226,0.4); */
-  background-color: rgba(0,0,255,0.6);
+  background-color: rgba(255,255,255,0.4);
   margin-top: 10px;
   /* border-top: 1px solid lightblue; */
-  border-bottom: 1px solid lightblue;
+  border-bottom: 2px solid #800000;
 }
 
 /* .welcome-greeting{
@@ -37,7 +37,7 @@
 } */
 /* this following animation was borrowed from Sohrab Hejazi from Stack Overflow*/
 .welcome-greeting{
-  color: white;
+  color: lightgrey;
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 45px;
@@ -50,6 +50,7 @@
   overflow: hidden;
   width: 30em;
   animation: type 6s steps(60, end);
+  -webkit-text-stroke: .3px white;
 }
 
 .welcome-greeting-logo{
@@ -58,6 +59,8 @@
   display: flex;
   margin-left: 10px;
   margin-top: 51px;
+  color: red;
+  -webkit-text-stroke: .1px #800000;
 
 }
 
@@ -67,8 +70,9 @@
 
 .logo{
   font-family: "Brush Script MT", cursive;
-  font-size: 45px;
-  color: white;
+  font-size: 50px;
+  color: red;
+  -webkit-text-stroke: .1px #800000;
   display: flex;
   margin-left: 100px;
   margin-top: 0px;
@@ -86,12 +90,22 @@
   text-decoration: none;
   display: flex;
   color: white;
-  padding-right: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 12px;
+  justify-content: center;
+  border-radius: 50px;
 }
 
-.login-button:hover, .signup-button:hover {
-  color: lightblue;
+.signup-button {
+  background-color: #800000;
+}
+.login-button:hover{
+  color: #800000;
+}
+
+.signup-button:hover{
+  background-color: #FF0000;
 }
 
 

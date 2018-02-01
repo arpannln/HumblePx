@@ -13,15 +13,21 @@ class Api::PhotosController < ApplicationController
   end
 
   def edit
-    @photo = Photo.new(photo_pamras)
+    @photo = Photo.find(params[:id])
+    if @photo.update(photo_params)
+      render json: @photo, include: [:author], status: 200
+    else
+      render json: @photo.errors.full_messages, status: 422
+    end
   end
 
   def delete
     @photo = Photo.find(params[:id])
+    @photo.delete
   end
 
   def index
-    @photo = Photo.find
+    @photos = Photo.all
   end
 
   private

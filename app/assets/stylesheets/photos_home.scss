@@ -1,13 +1,15 @@
 .photos-all {
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
+  width: 100vw;
+
+  flex-direction: row;
 }
 .single-home-photo-container {
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: 20px;
 }
+
 .single-home-photo {
-  max-width: 100%;
+  width: 50px;
   height: auto;
 }

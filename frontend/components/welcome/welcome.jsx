@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PhotosHomepageContainer from '../photos/photos_homepage_container';
 
 const sessionLinks = (removeAllErrors) => (
   <div>
@@ -20,10 +21,13 @@ const sessionLinks = (removeAllErrors) => (
 
 
 const personalWelcome = (currentUser, logout) => (
-  <h1 className="welcome">
-    <h2 className="welcome-name">Welcome, {currentUser.username}!</h2>
-    <button className="welcome-logout" onClick={logout}>Log Out</button>
-  </h1>
+  <div>
+    <h1 className="welcome">
+      <h2 className="welcome-name">Welcome, {currentUser.username}!</h2>
+      <button className="welcome-logout" onClick={logout}>Log Out</button>
+    </h1>
+    <PhotosHomepageContainer/>
+  </div>
 );
 
 

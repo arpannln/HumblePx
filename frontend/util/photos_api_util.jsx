@@ -2,7 +2,6 @@ export const fetchAllPhotos = () => (
   $.ajax({
     method: "GET",
     url: "api/photos",
-
   })
 );
 

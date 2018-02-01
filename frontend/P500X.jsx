@@ -2,7 +2,8 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 import React from 'react';
-import {signup} from './actions/session_actions';
+import {signup, logout} from './actions/session_actions';
+import {fetchAllPhotos} from './actions/photos_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -13,6 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     store = configureStore();
   }
+
+
+  window.logout = logout;
+  window.store = store;
+  window.fetchAllPhotos = fetchAllPhotos;
   // TESTING START
 
   // TESTING END

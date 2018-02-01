@@ -14,3 +14,54 @@ Photo.create(title: "Wow what a picture",
   img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
   author_id: 2
 )
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)
+
+Photo.create(title: "Wow what a picture",
+  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+  author_id: 2
+)

@@ -23,18 +23,32 @@ class SessionForm extends React.Component {
     if (nextProps.loggedIn) {
       this.props.history.push('/'); //redirects to index
     }
+
+    // if (this.props.sessionErrors.length) {
+    //   this.props.removeAllErrors();
+    // }
   }
 
   componentDidUpdate() {
-    if (this.props.history.location.pathname !== this.currentPath){
-      this.currentPath = this.props.history.location.pathname;
-      this.props.removeAllErrors();
-    }
+    // if (this.props.history.location.pathname !== this.currentPath){
+    //   this.currentPath = this.props.history.location.pathname;
+    //   this.props.removeAllErrors();
+    // }
+
   }
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm({user});
+    console.log(this.state);
+    if (this.props.sessionErrors.length) {
+      this.props.removeAllErrors();
+    }
+    this.props.processForm({user}).then(this.setState({
+      username: '',
+      password: ''
+    }));
+
+
   }
 
   handleDemo(e) {
@@ -62,7 +76,7 @@ class SessionForm extends React.Component {
           this.props.formType === 'Login' ? 'Welcome Back!' : 'Join Us'}</h1>
           <label className="errors">
             {
-              <ul>{this.props.errors ? this.props.errors[0] : ""}</ul>
+              <ul>{this.props.sessionErrors ? this.props.sessionErrors[0] : ""}</ul>
             }
           </label>
           <label className="username">Username: &nbsp; &nbsp;

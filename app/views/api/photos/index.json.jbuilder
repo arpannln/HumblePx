@@ -1,5 +1,4 @@
 # json.extract! @photos,
-json.photos do
   @photos.each do |photo|
     json.set! photo.id do
       json.extract! photo, :id, :title, :img_url
@@ -8,4 +7,3 @@ json.photos do
       end
     end
   end
-end

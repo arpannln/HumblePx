@@ -13,12 +13,15 @@ class Api::PhotosController < ApplicationController
   end
 
   def edit
+    @photo = Photo.new(photo_pamras)
   end
 
   def delete
+    @photo = Photo.find(params[:id])
   end
 
   def index
+    @photo = Photo.find
   end
 
   private

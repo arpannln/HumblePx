@@ -41,8 +41,8 @@
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 45px;
-  margin-top: 18.5%;
-  margin-left: 20%;
+  margin-top: 27.5%;
+  margin-left: 15%;
   position: absolute;
   z-index: 0;
   display: flex;
@@ -54,7 +54,8 @@
 }
 
 .welcome-greeting-logo{
-  font-family: "Brush Script MT", cursive;
+  /* font-family: "Brush Script MT", cursive; */
+  font-family: "Open Sans";
   font-size: 65px;
   display: flex;
   margin-left: 10px;

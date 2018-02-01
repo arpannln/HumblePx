@@ -54,18 +54,18 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="Session-form">
+      <div className="session-form">
           <form onSubmit={this.handleSubmit} className="login-form">
           <Link className="close-form" to="/">X</Link>
+        <div className="session-box">
           <h1 className="session-label">{
           this.props.formType === 'Login' ? 'Welcome Back!' : 'Join Us'}</h1>
-
           <label className="errors">
             {
               <ul>{this.props.errors ? this.props.errors[0] : ""}</ul>
             }
           </label>
-          <label className="username">Username:
+          <label className="username">Username: &nbsp; &nbsp;
             <input type="text"
               value={this.state.username}
               onChange={this.update('username')}
@@ -73,7 +73,7 @@ class SessionForm extends React.Component {
             />
           </label>
           <br/>
-          <label className="password">Password:
+          <label className="password">Password: &nbsp; &nbsp;
             <input type="password"
               value={this.state.password}
               onChange={this.update('password')}
@@ -84,7 +84,8 @@ class SessionForm extends React.Component {
           <h3>{this.navLink()}</h3>
           <br/>
           <input className="submit-button" type="submit" value={this.props.formType}/>
-          <input className="demo-button" value=" Demo" onClick={this.handleDemo}/>
+          <input className="demo-button" value="   Demo" onClick={this.handleDemo}/>
+        </div>
           </form>
       </div>
     );

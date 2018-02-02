@@ -1,13 +1,19 @@
 import React from 'react';
-import {Link} from 'react-router-dom'; //withRouter? why
+import { Link, Route } from 'react-router-dom'; //withRouter? why
+import PhotoShowContainer from './photo_show_container';
 
 class PhotosHomepage extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
   componentDidMount() {
     this.props.fetchAllPhotos();
   }
   render() {
     const photos = this.props.photos;
     //can add some loading feature here using loading ?
+    debugger;
     return (
       <div className="photos-all">
         {
@@ -19,6 +25,7 @@ class PhotosHomepage extends React.Component {
             </ul>
           ))
         }
+        <Route exact path="/photos/:photoId" component={PhotoShowContainer} />
       </div>
     );
   }

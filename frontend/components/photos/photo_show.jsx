@@ -4,9 +4,8 @@ import { Link, Route } from 'react-router-dom';
 class PhotoShow extends React.Component {
   constructor(props) {
     super(props);
-    props.fetchPhoto(this.props.match.params.photoId);
-    console.log(props);
   }
+
   componentWillMount() {
     this.props.fetchPhoto(this.props.match.params.photoId);
   }
@@ -19,7 +18,6 @@ class PhotoShow extends React.Component {
 
   render() {
     const {photo} = this.props;
-    console.log(photo);
     if (photo) {
     return (
     <div className="show-photo-back">

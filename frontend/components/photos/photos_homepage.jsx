@@ -13,7 +13,6 @@ class PhotosHomepage extends React.Component {
   render() {
     const photos = this.props.photos;
     //can add some loading feature here using loading ?
-    debugger;
     return (
       <div className="photos-all">
         {

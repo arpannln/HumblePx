@@ -4,6 +4,7 @@ import { Link, Route } from 'react-router-dom';
 class PhotoShow extends React.Component {
   constructor(props) {
     super(props);
+    this.goBackToPhotos = this.goBackToPhotos.bind(this);
   }
 
   componentWillMount() {
@@ -16,13 +17,17 @@ class PhotoShow extends React.Component {
     }
   }
 
+  goBackToPhotos() {
+    this.props.history.push('/photos');
+  }
+
   render() {
     const {photo} = this.props;
     if (photo) {
     return (
-    <div className="show-photo-back">
-      <div className="show-photo">
-        <h1>{photo.title}</h1>
+    <div className="show-photo-back" onClick={() => this.goBackToPhotos()}>
+      <div className="show-photo" onClick={null}>
+        <h1 className="show-photo-title">{photo.title}</h1>
         <img className="show-photo-image" src={photo.img_url} alt={photo.title}/>
       </div>
     </div>

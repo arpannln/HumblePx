@@ -1,14 +1,23 @@
 .show-photo {
   position: absolute;
-  z-index: 0;
-  background-color: red;
-  width: 25%;
-  height: 200px;
+  z-index: 100;
+  background-color: rgba(128, 0, 0, 1.0);
+  width: 400px;
+  height: 400px;
+  margin: 0 35%;
+  margin-top: 20%;
+
+}
+
+.show-photo-title {
+  color: white;
+  -webkit-text-stroke: .3px black;
 }
 
 .show-photo > img {
   width: 100%;
   height: 90%;
+  margin: 5% 5%;
 }
 
 .show-photo > h1 {
@@ -16,10 +25,16 @@
 }
 
 .show-photo-back {
-  position: absolute;
+  position: fixed;
   display: flex;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
+  height: 100%;
+  top: 0px;
+
+
+
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;

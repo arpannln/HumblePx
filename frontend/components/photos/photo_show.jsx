@@ -17,18 +17,21 @@ class PhotoShow extends React.Component {
     }
   }
 
-  goBackToPhotos() {
-    this.props.history.push('/photos');
+  goBackToPhotos(e) {
+    if (e.target.className === "show-photo-back") {
+      this.props.history.push('/photos');
+    }
   }
 
   render() {
     const {photo} = this.props;
     if (photo) {
     return (
-    <div className="show-photo-back" onClick={() => this.goBackToPhotos()}>
-      <div className="show-photo" onClick={null}>
+    <div className="show-photo-back" onClick={this.goBackToPhotos}>
+      <div className="show-photo">
         <h1 className="show-photo-title">{photo.title}</h1>
         <img className="show-photo-image" src={photo.img_url} alt={photo.title}/>
+        <h3 className="show-photo-author">{photo.author.username}</h3>
       </div>
     </div>
     );} else {

@@ -1,27 +1,37 @@
 .show-photo {
   position: absolute;
   z-index: 100;
-  background-color: rgba(128, 0, 0, 1.0);
+  background-color: rgba(0, 0, 0, 1.0);
   width: 400px;
-  height: 400px;
+  height: 500px;
   margin: 0 35%;
-  margin-top: 20%;
+  margin-top: 10%;
+  border: 2px solid white;
 
 }
 
 .show-photo-title {
-  color: white;
-  -webkit-text-stroke: .3px black;
+  color: #800000;
+  -webkit-text-stroke: 1px white;
+  margin-left: 20px;
 }
 
 .show-photo > img {
-  width: 100%;
-  height: 90%;
+  width: 90%;
+  height: 70%;
   margin: 5% 5%;
+  border: 2px solid white;
 }
 
 .show-photo > h1 {
   height: 20px;
+}
+
+.show-photo-author {
+  color: white;
+  font-family: "Open Sans";
+  display: flex;
+  margin-left: 20px;
 }
 
 .show-photo-back {

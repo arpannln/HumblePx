@@ -12,58 +12,7 @@ User.create(username: "DemoUser", password: "password")
 
 100.times do
   Photo.create(title: "Wow what a picture",
-    img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
+    img_url: "https://images.unsplash.com/photo-1459885516159-5c68a9cf5de5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23fc6d61c8212331b0e294489a13fa37&auto=format&fit=crop&w=1050&q=80",
     author_id: 2
   )
 end
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)
-
-Photo.create(title: "Wow what a picture",
-  img_url: "https://images.unsplash.com/photo-1415889455891-23bbf19ee5c7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5025d379155afa5d4070dcb979acdf09&auto=format&fit=crop&w=1055&q=80",
-  author_id: 2
-)

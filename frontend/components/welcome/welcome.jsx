@@ -21,11 +21,14 @@ const sessionLinks = (removeAllErrors) => (
 
 
 const personalWelcome = (currentUser, logout) => (
-  <div>
-    <h1 className="welcome">
-      <h2 className="welcome-name">Welcome, {currentUser.username}!</h2>
+  <div className="home-page">
+    <h1 className="nav-bar">
+      <h1 className="logo">Humble</h1>
       <button className="welcome-logout" onClick={logout}>Log Out</button>
     </h1>
+    <bold className="welcome-statement">
+      Discover Something New...
+    </bold>
     <PhotosHomepageContainer/>
   </div>
 );

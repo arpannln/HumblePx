@@ -14,12 +14,12 @@
 
 .welcome-statement {
   font-family: "Open Sans";
-  margin-left: 80px;
+  margin-left: 180px;
   font-weight: 400;
-  color: white;
+  color: #800000;
   font-size: 80px;
   // -webkit-text-stroke: 5px white;
-   -webkit-text-stroke: 2px black;
+   -webkit-text-stroke: 2px white;
    display: flex;
    white-space: nowrap;
    overflow: hidden;
@@ -34,7 +34,7 @@
 
 .welcome-logout {
   display: flex;
-  width: 60px;
+  width: 90px;
   height: 35px;
   color: white;
   background-color: #800000;
@@ -42,6 +42,7 @@
   margin-top: 8px;
   margin-right: 10px;
   border: 2px solid white;
+  justify-content: center;
 }
 
 .welcome-logout:hover {
@@ -73,9 +74,10 @@
 // }
 
   // the bottom code for making rotating polaroids was borrowed from paulund.co.uk
+  // i refactored a bit to add different sizes/
 
   .single-home-photo-container {
-    background: white;
+    background: black;
   	display: inline;
   	float: left;
   	margin: 0 15px 30px;
@@ -100,12 +102,8 @@
   	top:15px;
   }
 
-  .single-home-photo {
-    display: block;
-	   width: 350px;
-  }
 
-  .single-home-photo-container:nth-child(2n)
+.single-home-photo-container:nth-child(2n)
 {
 	-webkit-transform: rotate(4deg);
 	-moz-transform: rotate(4deg);
@@ -141,7 +139,36 @@
 	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
         box-shadow: 0 10px 20px rgba(0,0,0,.7);
 }
- // the borrowed code ends here 
+ // the borrowed code ends here
+    .single-home-photo{
+      display: flex;
+      width: 250px;
+      border: 2px solid white;
+    }
+ // .single-home-photo:nth-child(2n) {
+ //   display: flex;
+ //   width: 100px;
+ //   border: 2px solid white;
+ // }
+ //
+ // .single-home-photo:nth-child(3n) {
+ //   display: flex;
+ //   width: 100px;
+ //   border: 2px solid white;
+ // }
+ //
+ // .single-home-photo:nth-child(4n) {
+ //   display: flex;
+ //   width: 100px;
+ //   border: 2px solid white;
+ // }
+ //
+ // .single-home-photo:nth-child(5n) {
+ //   display: flex;
+ //   width: 100px;
+ //   border: 2px solid white;
+ // }
+
 .home-page{
   position: absolute;
   display: flex;

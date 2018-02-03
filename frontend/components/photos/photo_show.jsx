@@ -29,7 +29,7 @@ class PhotoShow extends React.Component {
     return (
     <div className="show-photo-back" onClick={this.goBackToPhotos}>
       <div className="show-photo">
-        <h1 className="show-photo-title">{photo.title}</h1>
+        <h3 className="show-photo-title">{photo.title}</h3>
         <img className="show-photo-image" src={photo.img_url} alt={photo.title}/>
         <h3 className="show-photo-author">{photo.author.username}</h3>
       </div>

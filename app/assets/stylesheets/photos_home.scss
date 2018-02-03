@@ -2,7 +2,7 @@
   display: flex;
 }
 .nav-bar {
-  margin-top: 65px;
+  margin-top: 25px;
   display: flex;
   width: 100%;
   height: 50px;
@@ -57,8 +57,8 @@
 .photos-all {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 130px;
+  margin-right: 130px;
   margin-top: 50px;
   flex-direction: row;
   justify-content: space-around;
@@ -77,10 +77,11 @@
   // i refactored a bit to add different sizes/
 
   .single-home-photo-container {
+    background-color: white;
   	display: inline;
   	float: left;
   	margin: 0 15px 30px;
-  	padding: 10px 10px 25px;
+  	padding: 10px 10px 45px;
     height: 100%;
   	text-align: center;
   	text-decoration: none;
@@ -92,6 +93,11 @@
   	transition: all .15s linear;
   	z-index:0;
     position:relative;
+  }
+
+  .photo-caption {
+    font-family: "Brush Script MT";
+
   }
 
   .single-home-photo-container:after {

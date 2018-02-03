@@ -27,7 +27,7 @@ const personalWelcome = (currentUser, logout) => (
       <button className="welcome-logout" onClick={logout}>Log Out</button>
     </h1>
     <bold className="welcome-statement">
-      Discover Something New...
+      Moments To Discover...
     </bold>
     <PhotosHomepageContainer/>
   </div>

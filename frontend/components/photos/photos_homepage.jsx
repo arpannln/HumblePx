@@ -20,7 +20,9 @@ class PhotosHomepage extends React.Component {
             <ul key={photo.id} className="single-home-photo-container">
               <Link to={`/photos/${photo.id}`}>
                 <img className="single-home-photo" src={photo.img_url} alt={photo.title}/>
+                <br></br>
               </Link>
+              <h3 className="photo-caption">What a cute picture!</h3>
             </ul>
           ))
         }

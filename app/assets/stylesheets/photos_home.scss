@@ -2,7 +2,7 @@
   display: flex;
 }
 .nav-bar {
-  margin-top: 25px;
+  margin-top: 15px;
   display: flex;
   width: 100%;
   height: 50px;
@@ -33,8 +33,10 @@
 
 
 .welcome-logout {
+  font-family: "Open Sans";
+  font-size: 20px;
   display: flex;
-  width: 90px;
+  width: 120px;
   height: 35px;
   color: white;
   background-color: #800000;

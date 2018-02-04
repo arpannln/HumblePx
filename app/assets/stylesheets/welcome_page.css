@@ -84,7 +84,7 @@
   justify-content: space-between;
 }
 
-.login-button, .signup-button {
+.login-button {
   /* font-family: "Brush Script MT", cursive; */
   font-family: "Open Sans";
   font-size: 20px;
@@ -93,14 +93,28 @@
   color: white;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 12px;
+  padding-top: 9px;
   justify-content: center;
   border-radius: 50px;
+  align-content: center;
 }
 
 .signup-button {
+  font-family: "Open Sans";
+  font-size: 20px;
+  display: flex;
+  width: 120px;
+  height: 35px;
+  color: white;
   background-color: #800000;
-
+  border-radius: 50px;
+  margin-top: 6px;
+  margin-right: 10px;
+  border: 2px solid white;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
 }
 .login-button:hover{
   color: #800000;

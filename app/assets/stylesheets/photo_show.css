@@ -4,8 +4,10 @@
   z-index: 100;
   background-color: rgba(255, 255, 255, 1.0);
   height: 80%;
-  margin: 0 35%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 10%;
+  margin-bottom: 10%;
   padding: 10px 10px 25px;
   border: 4px solid black;
   flex-direction: column;
@@ -25,11 +27,9 @@
 
 .show-photo > img {
   display: flex;
-  width: 150%;
-  height: 150%;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  border: 2px solid black;
+  width: inherit;
+  height: inherit;
+  position: relative;
 }
 
 .show-photo > h1 {

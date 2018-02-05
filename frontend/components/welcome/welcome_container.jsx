@@ -4,8 +4,9 @@ import { logout, removeAllErrors  } from '../../actions/session_actions';
 import Welcome from './welcome';
 import { withRouter } from 'react-router';
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, ownProps) => ({
   currentUser: state.session.currentUser,
+  page: state.page
 });
 
 const mapDispatchToProps = dispatch => ({

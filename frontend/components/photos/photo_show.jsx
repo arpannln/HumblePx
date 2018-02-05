@@ -19,7 +19,7 @@ class PhotoShow extends React.Component {
 
   goBackToPhotos(e) {
     if (e.target.className === "show-photo-back") {
-      this.props.history.push('/photos');
+      this.props.history.push('/');
     }
   }
 

@@ -16,6 +16,8 @@ const receiveUsers = (users) => ({
 
 
 
+
+
 export const fetchUser = (username) => dispatch => (
   APIUtil.fetchUser(username).then(user => (dispatch(receiveUser(user))),
       err => (dispatch(receiveUserErrors(err.responseJSON))))

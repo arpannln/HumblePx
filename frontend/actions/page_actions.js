@@ -1,8 +1,7 @@
 export const RECEIVE_PAGE = "RECEIVE_PAGE";
 
-const receivePage = (page) => ({
+const receivePage = () => ({
   type: RECEIVE_PAGE,
-  page
 });
 
-export const changePage = (page) => (dispatch) => dispatch(receivePage(page));
+export const changePage = () => (dispatch) => dispatch(receivePage());

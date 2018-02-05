@@ -20,21 +20,26 @@ const sessionLinks = (removeAllErrors) => (
 // {props.location.pathname === '/' ? <Link className="welcome-signup-button" to="/signup">Join Us</Link> : null}
 
 
-const personalWelcome = (currentUser, logout, page) => (
+const personalWelcome = (currentUser, logout, page, changePage) => (
   <div className="home-page">
-    <h1 className="nav-bar">
-      <h1 className="logo">Humble</h1>
-      <button className="welcome-logout" onClick={logout}>Log Out</button>
-    </h1>
-    {console.log(page)}
-    {page === "discover" ?
+    {page ?
       (<div>
+        <h1 className="nav-bar">
+          <h1 className="logo">Humble</h1>
+          <button className="switch-button" onClick={changePage}>Profile</button>
+          <button className="welcome-logout" onClick={logout}>Log Out</button>
+        </h1>
         <bold className="welcome-statement">
           {currentUser.username} Catch a City...
         </bold>
         <PhotosHomepageContainer/>
       </div>) :
       (<div>
+        <h1 className="nav-bar">
+          <h1 className="logo">Humble</h1>
+          <button className="switch-button" onClick={changePage}>Discover</button>
+          <button className="welcome-logout" onClick={logout}>Log Out</button>
+        </h1>
         <UserProfileContainer/>
       </div>)
 
@@ -43,8 +48,8 @@ const personalWelcome = (currentUser, logout, page) => (
 );
 
 
-const Welcome = ({currentUser, logout, removeAllErrors, page}) => (
-  currentUser ? personalWelcome(currentUser, logout, page) : sessionLinks(removeAllErrors)
+const Welcome = ({currentUser, logout, removeAllErrors, page, changePage}) => (
+  currentUser ? personalWelcome(currentUser, logout, page, changePage) : sessionLinks(removeAllErrors)
 );
 
 export default Welcome;

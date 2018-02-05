@@ -2,11 +2,11 @@ import {
   RECEIVE_PAGE
 } from '../actions/page_actions';
 
-const pageReducer = (state = "discover", action) => {
+const pageReducer = (state = true, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_PAGE:
-      return action.page;
+      return !state;
     default:
       return state;
   }

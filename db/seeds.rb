@@ -12,24 +12,24 @@ user2 = User.create(username: "DemoUser", password: "password")
 
 10.times do
   Photo.create(title: "Wow what a picture",
-    img_url: "https://images.unsplash.com/photo-1459885516159-5c68a9cf5de5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=23fc6d61c8212331b0e294489a13fa37&auto=format&fit=crop&w=1050&q=80",
+    img_url: "https://images.unsplash.com/photo-1517422688858-c17ab068121c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d54ae00017c1c7bf5230e45bde3e0e6e&auto=format&fit=crop&w=1055&q=80",
     author_id: user1.id
   )
   Photo.create(title: "Wow even better picture!",
-    img_url: "https://images.unsplash.com/photo-1462363634827-0734e51f24c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1049199ba24452a78174d6eee53b8465&auto=format&fit=crop&w=1050&q=80",
+    img_url: "https://images.unsplash.com/photo-1517220639352-4efe7490c4a0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9b9709b60f57d34b9be7dca91e531543&auto=format&fit=crop&w=1473&q=80",
     author_id: user2.id
   )
   Photo.create(title: "Sexy af pic",
-    img_url: "https://images.unsplash.com/photo-1517213628252-ae2125f4f270?ixlib=rb-0.3.5&s=f08de1b3eeb5adc9214e56ebdbbda1b1&auto=format&fit=crop&w=800&q=80",
+    img_url: "https://images.unsplash.com/photo-1516474065851-b1259b79ab2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4f6c95ee29065191e6a11604b4198074&auto=format&fit=crop&w=1050&q=80",
     author_id: user1.id
   )
 
   Photo.create(title: "Spiciest of pics",
-    img_url: "https://images.unsplash.com/photo-1489843704329-b420d20a0b43?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6de64d0b2cf3df6f17e7627fb90ff4a9&auto=format&fit=crop&w=1086&q=80",
+    img_url: "https://images.unsplash.com/photo-1516664807529-7a82ca7d8665?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=debe91178498564b8c45aae1dbf8d060&auto=format&fit=crop&w=1050&q=80",
     author_id: user2.id
   )
   Photo.create(title: "Super spicy pic",
-    img_url: "https://images.unsplash.com/photo-1431010540232-4d592e86ac42?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0091d8be3b77d9d0a53ebe2601b0b138&auto=format&fit=crop&w=634&q=80",
+    img_url: "https://images.unsplash.com/photo-1511881830150-850572962174?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b5223b0ec6feade9046014891446af0&auto=format&fit=crop&w=634&q=80",
     author_id: user2.id
   )
 

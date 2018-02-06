@@ -4,7 +4,7 @@ import Root from './components/root';
 import React from 'react';
 import {signup, logout} from './actions/session_actions';
 import {fetchAllPhotos} from './actions/photos_actions';
-import {fetchUsers} from './actions/users_actions';
+import {fetchUsers, fetchUser} from './actions/users_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.logout = logout;
   window.store = store;
   window.fetchAllPhotos = fetchAllPhotos;
-  window.fetchUsers = fetchUsers;
+  window.fetchUser = fetchUser;
   // TESTING START
 
   // TESTING END

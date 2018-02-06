@@ -24,6 +24,23 @@
   border-bottom: 2px solid #800000;
 }
 
+.switch-button{
+  display: flex;
+  font-family: "Open Sans";
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  font-size: 21.5px;
+  margin-right: 750px;
+  margin-left: 50px;
+
+}
+
+.switch-button:hover{
+  cursor: pointer;
+  color: #800000;
+}
+
 /* .welcome-greeting{
   font-family: "Open Sans";
   font-size: 45px;

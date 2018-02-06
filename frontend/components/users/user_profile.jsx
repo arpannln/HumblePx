@@ -6,12 +6,21 @@ class UserProfile extends React.Component {
     super(props);
   }
 
-  componentWillMount() {
-
+  componentDidMount() {
+    if (this.props.username) {
+      this.user = this.props.fetchUser(this.props.username);
+    } else {
+      console.log(this.props.currentUser.username);
+      this.user = this.props.fetchUser(this.props.currentUser.username);
+    }
+    // console.log(this.user);
   }
 
   render () {
-    return <h1>THIS IS PROFILE BISH</h1>;
+    return (<div>
+     <h1>Hello {this.props.currentUser.username}</h1>
+     
+      </div>);
   }
 }
 

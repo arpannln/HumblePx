@@ -11,6 +11,29 @@
   display: flex;
   width: 350px;
   height: 350px;
-  margin-bottom: 300px;
+  margin-top: 300px;
+  margin-left: 35%;
+  margin-right: 35%;
   z-index: 3;
+  border: 10px solid black;
+  border-radius: 500px;
+}
+
+.profile-all-photos {
+  position: absolute;
+  display: flex;
+  margin-top: 700px;
+  margin-left: 155px;
+  margin-right: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 3;
+}
+
+.profile-single-photo {
+  display: inline;
+  float: left;
+  width: 250px;
+  border: 10px solid black;
 }

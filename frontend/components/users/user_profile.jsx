@@ -10,17 +10,22 @@ class UserProfile extends React.Component {
     if (this.props.username) {
       this.user = this.props.fetchUser(this.props.username);
     } else {
-      console.log(this.props.currentUser.username);
       this.user = this.props.fetchUser(this.props.currentUser.username);
     }
     // console.log(this.user);
   }
 
   render () {
-    return (<div>
-     <h1>Hello {this.props.currentUser.username}</h1>
-     
+    const user = this.props.currentUser;
+    if (user) {
+    return (<div className = "user-background">
+     <img className="user-cover" src={user.cover_url}/>
+     <img className="user-photo" src={user.img_url}/>
       </div>);
+    } else {
+      return (<div>
+      </div>);
+    }
   }
 }
 

@@ -12,13 +12,14 @@
   color: white;
   font-family: "Open Sans";
   z-index: 3;
+  width: 60%;
   font-size: 60px;
   margin-top: 100px;
   margin-left: 150px;
   display: flex;
   white-space: nowrap;
   overflow: hidden;
-  width: 30em;
+
   animation: type 4s steps(60, end);
 }
 
@@ -30,6 +31,10 @@
   from { width: 0; }
 }
 
+body {
+  background-color: black;
+}
+
 .user-photo {
   position: absolute;
   display: flex;
@@ -39,7 +44,7 @@
   margin-left: 35%;
   margin-right: 35%;
   z-index: 3;
-  border: 10px solid black;
+  border: 10px solid white;
   border-radius: 500px;
 }
 .profile-tab {
@@ -48,11 +53,11 @@
   margin-left: 175px;
   margin-right: 200px;
   display: flex;
-  background-color: #800000;
+  background-color: gray;
   width: 70%;
   height: 50px;
   /* border-radius: 50px; */
-  border: 10px solid black;
+  border: 2px solid white;
 }
 
 .profile-all-photos {
@@ -71,5 +76,15 @@
   display: inline;
   float: left;
   width: 250px;
-  border: 10px solid black;
+  border: 10px solid white;
+}
+
+.my-photos-link {
+  color: #800000;
+  font-family: "Open Sans";
+  font-size: 30px;
+  margin-left: 70px;
+  margin-top: 3px;
+  text-decoration: none;
+  -webkit-text-stroke: 1px #800000;
 }

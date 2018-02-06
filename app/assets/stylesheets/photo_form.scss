@@ -1,0 +1,42 @@
+.photo-form-back {
+  position: fixed;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 110%;
+  height: 100%;
+  top: 0px;
+
+
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: 110;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-form {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.photo-dropzone {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  background-color: black;
+}
+
+.uploaded-img {
+  display: flex;
+  width: 250px;
+  height: 250px;
+}

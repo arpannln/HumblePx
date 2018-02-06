@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import PhotosHomepageContainer from '../photos/photos_homepage_container';
 import UserProfileContainer from '../users/user_profile_container';
+import PhotoUploadFormContainer from '../photos/photo_upload_form_container';
 const sessionLinks = (removeAllErrors) => (
   <div>
   <div className="welcome-page">
@@ -9,7 +10,7 @@ const sessionLinks = (removeAllErrors) => (
     <h1 className="logo">Humble</h1>
     <nav className="login-signup">
       <Link className="login-button" to="/login" onClick={removeAllErrors}>Login</Link> <br/>
-      <Link className="signup-button" to="/signup" onClick={removeAllErrors}>Sign up!</Link>
+      <Link className="signup-button" to="/signup" onClick={removeAllErrors}><h3 className="signup-text">Sign up!</h3></Link>
     </nav>
    </div>
   </div>
@@ -25,8 +26,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
     {page ?
       (<div>
         <h1 className="nav-bar">
-          <h1 className="logo">Humble</h1>
-          <button className="switch-button" onClick={changePage}>Profile</button>
+          <h1 className="logo">Humble<button className="switch-button" onClick={changePage}>Profile</button></h1>
           <button className="welcome-logout" onClick={logout}>Log Out</button>
         </h1>
         <bold className="welcome-statement">
@@ -36,10 +36,12 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
       </div>) :
       (<div>
         <h1 className="nav-bar">
-          <h1 className="logo">Humble</h1>
-          <button className="switch-button" onClick={changePage}>Discover</button>
+          <h1 className="logo">Humble<button className="switch-button" onClick={changePage}>Discover</button></h1>
+
+          <Link className="upload-button" to="/upload"> Upload </Link>
           <button className="welcome-logout" onClick={logout}>Log Out</button>
         </h1>
+        <Route exact path="/upload" component={PhotoUploadFormContainer} />
         <UserProfileContainer/>
       </div>)
 

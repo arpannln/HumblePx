@@ -28,11 +28,11 @@ class PhotoShow extends React.Component {
     if (photo) {
     return (
     <div className="show-photo-back" onClick={this.goBackToPhotos}>
-      <div className="show-photo">
         <h3 className="show-photo-title">{photo.title}</h3>
-        <img className="show-photo-image" src={photo.img_url} alt={photo.title}/>
+
+        <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
         <h3 className="show-photo-author">{photo.author.username}</h3>
-      </div>
+        
     </div>
     );} else {
     return (

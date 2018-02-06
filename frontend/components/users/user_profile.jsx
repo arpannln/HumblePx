@@ -26,7 +26,9 @@ class UserProfile extends React.Component {
     if (user) {
     return (<div className = "user-background">
      <img className="user-cover" src={user.cover_url}/>
+     <h1 className="profile-message"> <p>Share</p> &nbsp;a City...</h1>
      <img className="user-photo" src={user.img_url}/>
+     <nav className="profile-tab">Tab to be implemented</nav>
        <div className="profile-all-photos">
          {
            photos.map( photo => (

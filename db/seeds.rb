@@ -34,27 +34,27 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "http:/
   )
 
   Photo.create(title: "LOL Spice",
-    img_url: "https://images.unsplash.com/photo-1493308903033-e622ac815e5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=08a57031839573822d00845ab1b51b71&auto=format&fit=crop&w=1110&q=80",
+    img_url: "https://images.unsplash.com/photo-1516319614097-58ca30cc6bc7?ixlib=rb-0.3.5&s=42823d93f2545a0755abbcdd1f8bda06&auto=format&fit=crop&w=658&q=80",
     author_id: user1.id
   )
 
   Photo.create(title: "SPICE",
-    img_url: "https://images.unsplash.com/photo-1488551511020-571c741f122a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ef02675c768fbccd2c25aef5758f27aa&auto=format&fit=crop&w=1050&q=80",
+    img_url: "https://images.unsplash.com/photo-1514749333461-32dfa7b1c3ad?ixlib=rb-0.3.5&s=71563377dbaed54d48a44c8d72c64e1b&auto=format&fit=crop&w=634&q=80",
     author_id: user1.id
   )
 
   Photo.create(title: "SPICE level 9000",
-    img_url: "https://images.unsplash.com/photo-1487537086746-d1450528fb10?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a9c4ca58d04c4182b6c09e2c701278a4&auto=format&fit=crop&w=1834&q=80",
+    img_url: "https://images.unsplash.com/photo-1516900557549-41557d405adf?ixlib=rb-0.3.5&s=beb062aa1ec542c5cc6cb4ce2d9b2e61&auto=format&fit=crop&w=700&q=80",
     author_id: user2.id
   )
 
   Photo.create(title: "Oh boy what a pic",
-    img_url: "https://images.unsplash.com/photo-1509841983117-b1743ecf2281?ixlib=rb-0.3.5&s=51cfd1f26a890ae2f8a4e849f6c9693b&auto=format&fit=crop&w=634&q=80",
+    img_url: "https://images.unsplash.com/photo-1514553237570-db8f22c96fd2?ixlib=rb-0.3.5&s=f3b08b697976b0cc126bf8d887402bda&auto=format&fit=crop&w=701&q=80",
     author_id: user1.id
   )
 
   Photo.create(title: "Dude this pic tho",
-    img_url: "https://images.unsplash.com/photo-1506144226159-28c018698c57?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=97b38009174d457784b4afd893385569&auto=format&fit=crop&w=634&q=80",
+    img_url: "https://images.unsplash.com/photo-1511845241939-402489d3d670?ixlib=rb-0.3.5&s=62600abda1aad5229627953ae68cc76a&auto=format&fit=crop&w=634&q=80",
     author_id: user2.id
   )
 

@@ -30,7 +30,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
           <button className="welcome-logout" onClick={logout}>Log Out</button>
         </h1>
         <bold className="welcome-statement">
-          {currentUser.username} Catch a City...
+          <p>Catch</p>&nbsp;a City...
         </bold>
         <PhotosHomepageContainer/>
       </div>) :

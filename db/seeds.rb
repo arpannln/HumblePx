@@ -10,7 +10,7 @@ User.destroy_all
 Photo.destroy_all
 
 user1 = User.create(username: "arpan", password: "password", img_url: "http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image-300x300.png", cover_url: "https://images.unsplash.com/photo-1494707633652-f43986561810?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4dfad53b74a1116eef8b47cf50cba066&auto=format&fit=crop&w=1524&q=80" )
-user2 = User.create(username: "DemoUser", password: "password", img_url: "http://cdn.playbuzz.com/cdn/7c64b93c-5ece-4024-bfde-1a15b859f83b/dae5bd0c-8849-4071-8c13-e00198cf5fd3.png", cover_url: "https://images.unsplash.com/photo-1494707633652-f43986561810?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4dfad53b74a1116eef8b47cf50cba066&auto=format&fit=crop&w=1524&q=80")
+user2 = User.create(username: "DemoUser", password: "password", img_url: "http://3.bp.blogspot.com/-mnUW0y8JjGs/T4bpnyDSnaI/AAAAAAAAAfY/Pdb-FEzUZik/s400/Jennifer+Aniston+Profile.jpg", cover_url: "https://images.unsplash.com/photo-1494707633652-f43986561810?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4dfad53b74a1116eef8b47cf50cba066&auto=format&fit=crop&w=1524&q=80")
 
 10.times do
   Photo.create(title: "Wow what a picture",

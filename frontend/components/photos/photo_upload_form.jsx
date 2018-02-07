@@ -20,7 +20,13 @@ class PhotoUploadForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createPhoto(this.state);
+    // console.log(this);
+    delete this.state["uploadedFile"];
+    let submit = {photo: this.state};
+    this.props.createPhoto(submit);
+    this.render();
+    this.props.history.push('/');
+
   }
 
   onImageDrop(files) {
@@ -70,13 +76,12 @@ class PhotoUploadForm extends React.Component {
             onDrop={this.onImageDrop.bind(this)}>
             <p>Drop an image or click to select a file to upload.</p>
           </Dropzone>
-          <div className="uploaded-img">
+
           {this.state.img_url === '' ? null :
-            <div>
-            <p>{this.state.uploadedFile.name}</p>
-            <img src={this.state.img_url} />
-            </div>}
-          </div>
+
+            <img className="uploaded-img" src={this.state.img_url} />
+            }
+
           <input
             className="title-input"
             type="text"

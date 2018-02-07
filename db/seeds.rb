@@ -31,33 +31,37 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "http:/
     author_id: user2.id
   )
   Photo.create(title: "Super spicy pic",
-    img_url: "https://images.unsplash.com/photo-1511881830150-850572962174?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b5223b0ec6feade9046014891446af0&auto=format&fit=crop&w=634&q=80",
-    author_id: user2.id
+    img_url: "https://images.unsplash.com/photo-1517449905587-f80695d63356?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36dd87f58a5389c9820df1b6420e0f48&auto=format&fit=crop&w=1498&q=80",
   )
 
   Photo.create(title: "LOL Spice",
-    img_url: "https://images.unsplash.com/photo-1516319614097-58ca30cc6bc7?ixlib=rb-0.3.5&s=42823d93f2545a0755abbcdd1f8bda06&auto=format&fit=crop&w=658&q=80",
+    img_url: "https://images.unsplash.com/photo-1503642551022-c011aafb3c88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e402f612efd271ac52647651246a2cd9&auto=format&fit=crop&w=750&q=80",
     author_id: user1.id
   )
 
   Photo.create(title: "SPICE",
-    img_url: "https://images.unsplash.com/photo-1514749333461-32dfa7b1c3ad?ixlib=rb-0.3.5&s=71563377dbaed54d48a44c8d72c64e1b&auto=format&fit=crop&w=634&q=80",
+    img_url: "https://images.unsplash.com/Ys-DBJeX0nE.JPG?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b41bd48dc97da6dafe203676b2594c0&auto=format&fit=crop&w=750&q=80",
     author_id: user1.id
   )
 
   Photo.create(title: "SPICE level 9000",
-    img_url: "https://images.unsplash.com/photo-1516900557549-41557d405adf?ixlib=rb-0.3.5&s=beb062aa1ec542c5cc6cb4ce2d9b2e61&auto=format&fit=crop&w=700&q=80",
+    img_url: "https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f4033e517acff897a1536ed69fc9dab&auto=format&fit=crop&w=889&q=80",
     author_id: user2.id
   )
 
   Photo.create(title: "Oh boy what a pic",
-    img_url: "https://images.unsplash.com/photo-1514553237570-db8f22c96fd2?ixlib=rb-0.3.5&s=f3b08b697976b0cc126bf8d887402bda&auto=format&fit=crop&w=701&q=80",
+    img_url: "https://images.unsplash.com/photo-1484690088595-faea13012c39?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=afc5c4f919c63950f55da41ac96267b9&auto=format&fit=crop&w=751&q=80",
     author_id: user1.id
   )
 
   Photo.create(title: "Dude this pic tho",
-    img_url: "https://images.unsplash.com/photo-1511845241939-402489d3d670?ixlib=rb-0.3.5&s=62600abda1aad5229627953ae68cc76a&auto=format&fit=crop&w=634&q=80",
+    img_url: "https://images.unsplash.com/photo-1505205296326-2178af1b47bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=16ef2e41e10c852a17abf9ce4f430d62&auto=format&fit=crop&w=750&q=80",
     author_id: user2.id
+  )
+
+  Photo.create(title: "Dude this pic",
+    img_url: "https://images.unsplash.com/photo-1517713982677-4b66332f98de?ixlib=rb-0.3.5&s=55596933da0673eb5d076d5f91b1b7f9&auto=format&fit=crop&w=1500&q=80",
+    author_id: user1.id
   )
 
 

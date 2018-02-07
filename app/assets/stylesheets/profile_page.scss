@@ -53,7 +53,7 @@ body {
   margin-left: 175px;
   margin-right: 200px;
   display: flex;
-  background-color: gray;
+  background-color: black;
   width: 70%;
   height: 50px;
   /* border-radius: 50px; */
@@ -80,11 +80,11 @@ body {
 }
 
 .my-photos-link {
-  color: #800000;
+  color: white;
   font-family: "Open Sans";
   font-size: 30px;
   margin-left: 70px;
   margin-top: 3px;
   text-decoration: none;
-  -webkit-text-stroke: 1px #800000;
+  -webkit-text-stroke: 1px white;
 }

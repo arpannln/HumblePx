@@ -109,7 +109,13 @@
 
   .photo-caption {
     font-family: "Brush Script MT";
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+  }
 
+  i:hover {
+    cursor: pointer;
   }
 
   .single-home-photo-container:after {

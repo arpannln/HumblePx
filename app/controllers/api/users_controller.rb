@@ -22,6 +22,7 @@ class Api::UsersController < ApplicationController
       render json: ["User not found"], status: :not_found
     else
       @photos = @user.photos
+      @liked_photos = @user.liked_photos
       render :show
     end
   end

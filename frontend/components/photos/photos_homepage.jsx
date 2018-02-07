@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom'; //withRouter? why
 import PhotoShowContainer from './photo_show_container';
-
+import PhotoIndexItemContainer from './photo_index_item_container';
 class PhotosHomepage extends React.Component {
 
   constructor(props) {
@@ -10,6 +10,11 @@ class PhotosHomepage extends React.Component {
   componentDidMount() {
     this.props.fetchAllPhotos();
   }
+
+
+
+
+
   render() {
     const photos = this.props.photos;
     //can add some loading feature here using loading ?
@@ -17,13 +22,7 @@ class PhotosHomepage extends React.Component {
       <div className="photos-all">
         {
           photos.map( photo => (
-            <ul key={photo.id} className="single-home-photo-container">
-              <Link to={`/photos/${photo.id}`}>
-                <img className="single-home-photo" src={photo.img_url} alt={photo.title}/>
-                <br></br>
-              </Link>
-              <h3 className="photo-caption">What a cute picture!</h3>
-            </ul>
+            <PhotoIndexItemContainer key={photo.id} photo={photo}/>
           ))
         }
         <Route exact path="/photos/:photoId" component={PhotoShowContainer} />

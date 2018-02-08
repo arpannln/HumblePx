@@ -15,7 +15,8 @@ const sessionLinks = (removeAllErrors) => (
    </div>
   </div>
   <h1 className="welcome-greeting">Sit Down, <br/> &nbsp; &nbsp;&nbsp;
-    Explore<p className="welcome-greeting-logo">Humble...</p></h1>
+    Explore<p className="welcome-greeting-logo">Humble...</p> <br/><br/>
+  <p className= "last-sentence"> Discover Cities Together </p> </h1>
   </div>
 );
 // {props.location.pathname === '/' ? <Link className="welcome-signup-button" to="/signup">Join Us</Link> : null}

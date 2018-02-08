@@ -126,15 +126,22 @@
   font-size: 45px;
   margin-top: 27.5%;
   margin-left: 15%;
-  width: 60%;
+  width: 80%;
   position: absolute;
   z-index: 0;
   display: flex;
   white-space: nowrap;
   overflow: hidden;
 
-  animation: type 6s steps(60, end);
+  animation: type 3s steps(60, end);
   -webkit-text-stroke: .3px white;
+}
+
+.last-sentence {
+  color: white;
+  margin-left: -200px;
+  margin-top: 200px;
+  -webkit-text-stroke: 3px white;
 }
 
 .welcome-greeting-logo{

@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import PhotoShowContainer from '../photos/photo_show_container';
+import Masonry from 'react-masonry-component';
 
+var masonryOptions = {
+    transitionDuration: 0
+};
 class UserProfile extends React.Component {
   constructor(props) {
     super(props);
@@ -55,7 +59,6 @@ class UserProfile extends React.Component {
                    <img className="profile-single-photo" src={photo.img_url} alt={photo.title}/>
                    <br></br>
                  </Link>
-                 <h3 className="profile-photo-caption">What a cute picture!</h3>
                </ul>
            ))
          }

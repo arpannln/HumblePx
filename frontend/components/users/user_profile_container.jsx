@@ -7,11 +7,13 @@ const mapStateToProps = (state, ownProps) => {
   const username = ownProps.match.params.username;
   const currentUser = state.session.currentUser;
   const users = state.users;
+  const photos = state.photos;
 
   return {
     username,
     currentUser,
-    users
+    users,
+    photos
   };
 };
 

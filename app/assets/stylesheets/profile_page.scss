@@ -59,6 +59,11 @@ body {
   /* border-radius: 50px; */
 }
 
+.my-photos-link:hover {
+  cursor: pointer;
+  color: red;
+  -webkit-text-stroke: 1px red;
+}
 .profile-all-photos {
   position: absolute;
   display: flex;

@@ -9,7 +9,6 @@ class PhotoIndexItem extends React.Component{
   toggleLike() {
     const {photo} = this.props;
     const like = {photo_id: photo.id};
-    debugger;
     if (this.props.photo.currentUserLikes) {
       this.props.deleteLike(photo.id);
     } else {
@@ -26,7 +25,6 @@ class PhotoIndexItem extends React.Component{
 
   render () {
     const {photo} = this.props;
-    console.log(photo);
     const color = this.props.photo.currentUserLikes ? <div className="red-heart-show"><i className="material-icons" style={{color:'red'}}>favorite</i></div> :
                                                       <div className="gray-heart-show"><i className="material-icons" style={{color:'gray'}}>favorite</i></div>
     return (

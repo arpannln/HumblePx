@@ -58,3 +58,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.show-like-button {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  margin-left: 370px;
+  margin-top: 280px;
+
+}
+.show-like-button:hover {
+  cursor: pointer;
+}

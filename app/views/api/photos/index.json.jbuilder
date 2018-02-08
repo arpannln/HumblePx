@@ -5,5 +5,6 @@
       json.author do
         json.partial! '/api/users/user', user: photo.author
       end
+      json.currentUserLikes photo.likers.include?(current_user)
     end
   end

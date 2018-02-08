@@ -2,10 +2,13 @@ import {connect} from 'react-redux';
 import {createLike, deleteLike} from '../../actions/likes_actions';
 import PhotoIndexItem from './photo_index_item';
 
-const mapStateToProps = (state, ownProps) => ({
-  currentUser: state.session.currentUser,
-  currentUserLikes: state.session.currentUser.liked_photos.includes(ownProps.photo.id)
-});
+const mapStateToProps = (state, ownProps) => (
+    {
+      currentUser: state.session.currentUser,
+      photos: state.photos
+    }
+);
+
 
 
 const mapDispatchToProps = dispatch => ({

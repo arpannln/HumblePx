@@ -12,7 +12,7 @@ class Api::PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
     return render json: ["Photo not found"], status: 422 unless @photo
-    render json: @photo, include: [:author, :likers], status: 200
+    render "api/photos/show", status: 200
   end
 
   def edit
@@ -32,6 +32,7 @@ class Api::PhotosController < ApplicationController
 
   def index
     @photos = Photo.all
+    render :index
   end
 
   private

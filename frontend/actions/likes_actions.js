@@ -1,5 +1,5 @@
 import * as APIUtil from "../util/likes_api_util";
-
+import {receivePhoto} from "./photos_actions";
 export const RECEIVE_LIKE = "RECEIVE_LIKE";
 export const REMOVE_LIKE = "REMOVE_LIKE";
 
@@ -14,9 +14,9 @@ const removeLike = (likeId) => ({
 });
 
 export const createLike = (like) => dispatch => (
-  APIUtil.createLike(like).then( like2 => dispatch(receiveLike(like2)))
+  APIUtil.createLike(like).then( photo => dispatch(receivePhoto(photo)))
 );
 
 export const deleteLike = (likeId) => dispatch => (
-  APIUtil.deleteLike(likeId).then( like => dispatch(removeLike(likeId)))
+  APIUtil.deleteLike(likeId).then( photo => dispatch(receivePhoto(photo)))
 );

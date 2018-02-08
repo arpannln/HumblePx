@@ -9,7 +9,8 @@ class PhotoIndexItem extends React.Component{
   toggleLike() {
     const {photo} = this.props;
     const like = {photo_id: photo.id};
-    if (this.props.currentUserLikes) {
+    debugger;
+    if (this.props.photo.currentUserLikes) {
       this.props.deleteLike(photo.id);
     } else {
       this.props.createLike({like});
@@ -25,16 +26,18 @@ class PhotoIndexItem extends React.Component{
 
   render () {
     const {photo} = this.props;
-    const color = this.props.photo.currentUserLikes ? "red" : "gray";
+    console.log(photo);
+    const color = this.props.photo.currentUserLikes ? <div className="red-heart-show"><i className="material-icons" style={{color:'red'}}>favorite</i></div> :
+                                                      <div className="gray-heart-show"><i className="material-icons" style={{color:'gray'}}>favorite</i></div>
     return (
     <ul key={photo.id} className="single-home-photo-container">
       <Link to={`/photos/${photo.id}`}>
         <img className="single-home-photo" src={photo.img_url} alt={photo.title}/>
         <br></br>
       </Link>
-      <h3 className="photo-caption">What a cute picture!
+      <h3 className="photo-caption">{photo.caption}
         <div onClick={ () => this.toggleLike() }>
-          <i className={`${color}`}></i>
+          {color}
         </div>
       </h3>
     </ul> );

@@ -27,7 +27,7 @@ class PhotoShow extends React.Component {
   toggleLike() {
     const {photo} = this.props;
     const like = {photo_id: photo.id};
-    if (this.props.currentUserLikes) {
+    if (this.props.photo.currentUserLikes) {
       this.props.deleteLike(photo.id);
     } else {
     this.props.createLike({like});
@@ -36,14 +36,19 @@ class PhotoShow extends React.Component {
   }
   render() {
     const {photo} = this.props;
-    const color = this.props.photo.currentUserLikes ? "red" : "gray";
+    const color = this.props.photo.currentUserLikes ? <div className="red-heart" onClick={ () => this.toggleLike() }><i className="material-icons" style={{color:'red'}}>favorite</i></div> :
+                                                      <div className="gray-heart" onClick={ () => this.toggleLike() }><i className="material-icons" style={{color:'gray'}}>favorite</i></div>
+
+
     if (photo) {
     return (
     <div className="show-photo-back" onClick={this.goBackToPhotos}>
-        <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
-          <div onClick={ () => this.toggleLike() }>
-            <i className={`${color}-show`}></i>
+        <div className="show-photo-holder">
+          <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
+          <div className="show-photo-caption" >
+             <h1 className="caption"> <h3> {photo.caption} </h3> {color} </h1>
           </div>
+        </div>
     </div>
     );} else {
     return (
@@ -55,3 +60,5 @@ class PhotoShow extends React.Component {
 }
 
 export default PhotoShow;
+
+// <i className={`${color}-show`}></i>

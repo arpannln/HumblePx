@@ -7,7 +7,7 @@ class PhotoShow extends React.Component {
     this.goBackToPhotos = this.goBackToPhotos.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchPhoto(this.props.match.params.photoId);
   }
 
@@ -36,9 +36,14 @@ class PhotoShow extends React.Component {
   }
   render() {
     const {photo} = this.props;
-    const color = this.props.photo.currentUserLikes ? <div className="red-heart" onClick={ () => this.toggleLike() }><i className="material-icons" style={{color:'red'}}>favorite</i></div> :
-                                                      <div className="gray-heart" onClick={ () => this.toggleLike() }><i className="material-icons" style={{color:'gray'}}>favorite</i></div>
-
+    let color;
+    if (!this.props.photo) {
+      color = null;
+    } else if (this.props.photo.currentUserLikes) {
+      color = <div className="red-heart" onClick={ () => this.toggleLike() }><i className="material-icons" style={{color:'red'}}>favorite</i></div>;
+    } else {
+      color = <div className="gray-heart" onClick={ () => this.toggleLike() }><i className="material-icons" style={{color:'gray'}}>favorite</i></div>;
+    }
 
     if (photo) {
     return (
@@ -46,7 +51,7 @@ class PhotoShow extends React.Component {
         <div className="show-photo-holder">
           <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
           <div className="show-photo-caption" >
-             <h1 className="caption"> <h3> {photo.caption} </h3> {color} </h1>
+            <h1 className="caption"> <h3> {photo.caption} </h3> {color} </h1>
           </div>
         </div>
     </div>

@@ -5,4 +5,4 @@ json.extract! @photo, :id, :title, :img_url, :likers
 #
 
 
- json.currentUserLikes @photo.likers.include?(current_user)
+json.currentUserLikes @photo.likers.include?(current_user)

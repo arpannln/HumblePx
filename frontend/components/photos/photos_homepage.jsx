@@ -12,17 +12,13 @@ class PhotosHomepage extends React.Component {
   }
 
 
-
-
-
   render() {
     const photos = this.props.photos;
-    //can add some loading feature here using loading ?
     return (
       <div className="photos-all">
         {
           photos.map( photo => (
-            <PhotoIndexItemContainer key={photo.id} photo={photo}/>
+            <PhotoIndexItemContainer key={photo.id} id={photo.id}/>
           ))
         }
         <Route exact path="/photos/:photoId" component={PhotoShowContainer} />

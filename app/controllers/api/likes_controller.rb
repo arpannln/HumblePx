@@ -2,6 +2,8 @@ class Api::LikesController < ApplicationController
   def create
     @like = Like.new(like_params)
     @like.user_id = current_user.id
+    @dupe = Like.find_by({user_id: current_user.id, photo_id: @like.photo_id})
+    return if @dupe
     @photo = Photo.find(@like.photo_id)
     if @like.save
       render "api/photos/show"
@@ -14,10 +16,10 @@ class Api::LikesController < ApplicationController
 
   def destroy
     @like = Like.find_by({user_id: current_user.id, photo_id: params[:id]} )
-    @photo = Photo.find(@like.photo_id)
     return render json: ["Not liked"], status: 422 unless @like
+    @photo = Photo.find(@like.photo_id)
     @like.delete
-    render json: "api/photos/show", status: 200
+    render "api/photos/show", status: 200
   end
 
   private

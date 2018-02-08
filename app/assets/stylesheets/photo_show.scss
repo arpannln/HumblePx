@@ -16,6 +16,49 @@
   position: relative; */
 }
 
+.red {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  position: absolute;
+}
+.gray {
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  position: absolute;
+}
+
+.red-show {
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  margin-left: 370px;
+  margin-top: 280px;
+
+}
+.red-show:hover {
+  cursor: pointer;
+}
+.gray-show {
+  background-color: gray;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  margin-left: 370px;
+  margin-top: 280px;
+}
+.gray-show:hover {
+  cursor: pointer;
+}
+
 
 .show-photo-image {
   display: flex;
@@ -57,16 +100,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.show-like-button {
-  position: absolute;
-  z-index: 100;
-  display: flex;
-  margin-left: 370px;
-  margin-top: 280px;
-
-}
-.show-like-button:hover {
-  cursor: pointer;
 }

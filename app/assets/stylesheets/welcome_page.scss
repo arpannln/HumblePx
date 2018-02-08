@@ -23,6 +23,46 @@
   /* border-top: 1px solid lightblue; */
   border-bottom: 2px solid #800000;
 }
+.welcome-logout {
+  font-family: "Open Sans";
+  font-size: 20px;
+  display: flex;
+  width: 120px;
+  height: 35px;
+  color: white;
+  background-color: #800000;
+  border-radius: 50px;
+  margin-left: 90px;
+  margin-top: -35px;
+  border: 2px solid white;
+  justify-content: center;
+}
+
+.welcome-logout:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.discover-welcome-logout {
+  font-family: "Open Sans";
+  font-size: 20px;
+  display: flex;
+  width: 120px;
+  height: 30px;
+  color: white;
+  background-color: #800000;
+  border-radius: 50px;
+  margin-left: 100px;
+  margin-top: -34px;
+  border: 2px solid white;
+  justify-content: center;
+  text-align: center;
+}
+
+.discover-welcome-logout:hover {
+  background-color: red;
+  cursor: pointer;
+}
 .upload-button {
   display: flex;
   font-family: "Open Sans";
@@ -30,15 +70,15 @@
   color: white;
   border: none;
   font-size: 21.5px;
-  margin-top: 10px;
-  margin-left: 50%;
+  margin-top: 9px;
+  margin-right: 160px;
   text-decoration: none;
 }
 
 .upload-button:hover{
   color: #800000;
 }
-.switch-button{
+.discover-button{
   display: flex;
   font-family: "Open Sans";
   background-color: rgba(0, 0, 0, 0);
@@ -49,9 +89,21 @@
   margin-top: 20px;
 }
 
-.switch-button:hover{
+.profile-button {
+  display: flex;
+  font-family: "Open Sans";
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  font-size: 21.5px;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+.profile-button:hover, .discover-button:hover{
   cursor: pointer;
   color: #800000;
+  -webkit-text-stroke: .1px #800000;
 }
 
 /* .welcome-greeting{

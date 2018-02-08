@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  window.logout = logout;
-  window.store = store;
-  window.fetchAllPhotos = fetchAllPhotos;
-  window.fetchUser = fetchUser;
+  // window.logout = logout;
+  // window.store = store;
+  // window.fetchAllPhotos = fetchAllPhotos;
+  // window.fetchUser = fetchUser;
   // TESTING START
 
   // TESTING END

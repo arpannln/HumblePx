@@ -14,7 +14,9 @@ const removeLike = (likeId) => ({
 });
 
 export const createLike = (like) => dispatch => (
-  APIUtil.createLike(like).then( photo => dispatch(receivePhoto(photo)))
+  APIUtil.createLike(like).then( photo => {
+    return dispatch(receivePhoto(photo));
+  })
 );
 
 export const deleteLike = (likeId) => dispatch => (

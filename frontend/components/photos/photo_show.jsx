@@ -22,30 +22,28 @@ class PhotoShow extends React.Component {
       this.props.history.push('/');
     }
   }
-  chooseAHeart() {
-    const {photo} = this.props;
-  
-    if (photo.currentUserLikes) {
-      return (<div className="show-like-button" onClick={ () => this.toggleLike() }><i className="fas fa-heart fa-lg" style={{color:"Red"}} ></i></div>);
-    } else {
-      return (<div className="show-like-button" onClick={ () => this.toggleLike() }><i className="fas fa-heart fa-lg" style={{color:"Gray"}} ></i></div>);
-    }
-  }
+
 
   toggleLike() {
     const {photo} = this.props;
     const like = {photo_id: photo.id};
+    if (this.props.currentUserLikes) {
+      this.props.deleteLike(photo.id);
+    } else {
     this.props.createLike({like});
-
+     }
       // this.props.deleteLike()
   }
   render() {
     const {photo} = this.props;
+    const color = this.props.photo.currentUserLikes ? "red" : "gray";
     if (photo) {
     return (
     <div className="show-photo-back" onClick={this.goBackToPhotos}>
         <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
-        <h1>{this.chooseAHeart()}</h1>
+          <div onClick={ () => this.toggleLike() }>
+            <i className={`${color}-show`}></i>
+          </div>
     </div>
     );} else {
     return (

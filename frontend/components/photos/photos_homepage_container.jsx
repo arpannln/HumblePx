@@ -15,9 +15,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch) => ({
   removeAllErrors: () => dispatch(removeAllErrors()),
   fetchAllPhotos: () => dispatch(fetchAllPhotos()),
-  createLike: (like) => dispatch(createLike(like)),
-  deleteLike: (likeId) => dispatch(deleteLike(likeId)),
-
 });
 
 export default withRouter(connect(

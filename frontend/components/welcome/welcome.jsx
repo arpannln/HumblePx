@@ -26,8 +26,11 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
     {page ?
       (<div>
         <h1 className="nav-bar">
-          <h1 className="logo">Humble<button className="switch-button" onClick={changePage}>Profile</button></h1>
-          <button className="welcome-logout" onClick={logout}>Log Out</button>
+          <h1 className="logo">Humble</h1>
+          <div className="links">
+            <h2 className="profile-button" onClick={changePage}>Profile</h2>
+            <button className="welcome-logout" onClick={logout}>Log Out</button>
+          </div>
         </h1>
         <bold className="welcome-statement">
           <p>Catch</p>&nbsp;a City...
@@ -36,10 +39,11 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
       </div>) :
       (<div>
         <h1 className="nav-bar">
-          <h1 className="logo">Humble<button className="switch-button" onClick={changePage}>Discover</button></h1>
-
-          <Link className="upload-button" to="/upload"> Upload </Link>
-          <button className="welcome-logout" onClick={logout}>Log Out</button>
+          <h1 className="logo">Humble<button className="discover-button" onClick={changePage}>Discover</button></h1>
+          <div>
+            <Link className="upload-button" to="/upload"> Upload </Link>
+            <h1 className="discover-welcome-logout" onClick={logout}>Log Out</h1>
+          </div>
         </h1>
         <Route exact path="/upload" component={PhotoUploadFormContainer} />
         <UserProfileContainer/>

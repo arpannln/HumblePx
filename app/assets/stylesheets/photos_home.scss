@@ -13,7 +13,13 @@
   border-bottom: 2px solid #800000;
   z-index: 5;
 }
+  .logo-prof:hover {
+    cursor: pointer;
+  }
 
+  .logo-disc:hover {
+    cursor: pointer;
+  }
 .welcome-statement {
 
   position: absolute;
@@ -73,7 +79,8 @@
     background-color: white;
   	display: inline;
   	float: left;
-  	margin: 0 15px 30px;
+  	margin-top: 20px;
+    margin-left: 40px;
   	padding: 10px 10px 45px;
     height: 100%;
   	text-align: center;
@@ -90,6 +97,7 @@
 
   .photo-caption {
     font-family: "Brush Script MT";
+    font-size: 25px;
     display: flex;
     width: 250px;
     justify-content: space-around;

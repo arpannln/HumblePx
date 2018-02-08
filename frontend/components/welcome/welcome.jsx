@@ -26,7 +26,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
     {page ?
       (<div>
         <h1 className="nav-bar">
-          <h1 className="logo">Humble</h1>
+          <h1 className="logo logo-disc">Humble</h1>
           <div className="links">
             <h2 className="profile-button" onClick={changePage}>Profile</h2>
             <button className="welcome-logout" onClick={logout}>Log Out</button>
@@ -39,7 +39,10 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
       </div>) :
       (<div>
         <h1 className="nav-bar">
-          <h1 className="logo">Humble<button className="discover-button" onClick={changePage}>Discover</button></h1>
+          <div>
+            <h1 className="logo logo-prof" onClick={changePage}>Humble</h1>
+            <button className="discover-button" onClick={changePage}>Discover</button>
+          </div>
           <div>
             <Link className="upload-button" to="/upload"> Upload </Link>
             <h1 className="discover-welcome-logout" onClick={logout}>Log Out</h1>

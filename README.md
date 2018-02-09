@@ -12,7 +12,7 @@
 * [Photo Uploads](#photo-upload-modal)
 * [Discover Photos](#discover-page)
 * [Photo Show](#photo-show-modal)
-* [Future Implementations](#future-features)
+* [Future Features](#future-features)
 
 
 ### User Auth

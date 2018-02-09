@@ -45,7 +45,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
             <button className="discover-button" onClick={changePage}>Discover</button>
           </div>
           <div>
-            <Link className="upload-button" to="/upload"> Upload &nbsp; <i class="material-icons">cloud_upload</i></Link>
+            <Link className="upload-button" to="/upload"> Upload &nbsp; <i className="material-icons">cloud_upload</i></Link>
             <h1 className="discover-welcome-logout" onClick={logout}>Log Out</h1>
           </div>
         </h1>

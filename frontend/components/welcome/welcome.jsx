@@ -27,7 +27,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
     {page ?
       (<div>
         <h1 className="nav-bar">
-          <h1 className="logo logo-disc">Humble</h1>
+          <a className="logo logo-disc" href="#top">Humble</a>
           <div className="links">
             <h2 className="profile-button" onClick={changePage}>Profile &nbsp;<img className="nav-user-photo" src={currentUser.img_url}/> &nbsp; </h2>
             <button className="welcome-logout" onClick={logout}>Log Out</button>

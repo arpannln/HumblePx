@@ -9,7 +9,7 @@
 User.destroy_all
 Photo.destroy_all
 
-user1 = User.create(username: "arpan", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194025/uhzd0spzpw4yviy65j7z.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg" )
+user1 = User.create(username: "Arpan", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194025/uhzd0spzpw4yviy65j7z.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg" )
 user2 = User.create(username: "DemoUser", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194025/uhzd0spzpw4yviy65j7z.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg")
 
 3.times do
@@ -20,7 +20,7 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "https:
   )
   Photo.create(title: "Wow what a picture",
     img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518114309/lwa9ykdiej6u1ow6pnou.jpg",
-    author_id: user2.id,
+    author_id: user1.id,
     caption: "Honeymoon in Venice!"
   )
   Photo.create(title: "Wow what a picture",
@@ -30,7 +30,7 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "https:
   )
   Photo.create(title: "Wow what a picture",
     img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518114135/rtnngw6tgdfikltzhjja.jpg",
-    author_id: user2.id,
+    author_id: user1.id,
     caption: "Best bridge in the bay!"
   )
   Photo.create(title: "Wow what a picture",
@@ -45,7 +45,7 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "https:
   )
   Photo.create(title: "Wow what a picture",
     img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518199722/yq20iihokmcorbl16mw7.jpg",
-    author_id: user2.id,
+    author_id: user1.id,
     caption: "Someone please tell me where this is"
   )
   Photo.create(title: "Wow what a picture",

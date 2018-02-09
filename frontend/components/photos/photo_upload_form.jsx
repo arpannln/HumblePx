@@ -69,34 +69,37 @@ class PhotoUploadForm extends React.Component {
     return (
       <div className="photo-form-back" onClick={this.goBackToProfile}>
         <form className="photo-form" onSubmit={this.handleSubmit}>
-          <h1 className="photo-form-title">Upload your own experience!</h1>
-          <Dropzone className="photo-dropzone"
-            multiple={false}
-            accept="image/*"
-            onDrop={this.onImageDrop.bind(this)}>
-            <p>Drop an image or click to select a file to upload.</p>
-          </Dropzone>
+          <div className="top-half">
+            <h1 className="photo-form-title">Upload your own experience!</h1>
+            <Dropzone className="photo-dropzone"
+              multiple={false}
+              accept="image/*"
+              onDrop={this.onImageDrop.bind(this)}>
+              <p>Drop an image or click to select a file to upload.</p>
+            </Dropzone>
 
-          {this.state.img_url === '' ? null :
+            {this.state.img_url === '' ? null :
 
-            <img className="uploaded-img" src={this.state.img_url} />
-            }
-
-          <input
-            className="title-input"
-            type="text"
-            value={this.state.title}
-            placeholder="Title"
-            onChange={this.update('title')}
-          />
-          <input
-            className="caption-input"
-            type="text"
-            value={this.state.caption}
-            placeholder="Caption"
-            onChange={this.update('caption')}
-          />
-        <button className="post-button">Post Photo</button>
+              <img className="uploaded-img" src={this.state.img_url} />
+              }
+          </div>
+          <div className="bottom-half">
+              <input
+                className="title-input"
+                type="text"
+                value={this.state.title}
+                placeholder="Title"
+                onChange={this.update('title')}
+              />
+              <input
+                className="caption-input"
+                type="text"
+                value={this.state.caption}
+                placeholder="Caption"
+                onChange={this.update('caption')}
+              />
+             <button className="post-button">Post Photo</button>
+          </div>
       </form>
       </div>
     );

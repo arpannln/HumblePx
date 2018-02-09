@@ -3,8 +3,7 @@ import { createPhoto } from '../../actions/photos_actions';
 import PhotoUploadForm from './photo_upload_form';
 import { withRouter } from 'react-router';
 
-const mapStateToProps = () => ({
-
+const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({

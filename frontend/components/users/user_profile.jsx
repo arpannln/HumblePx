@@ -31,15 +31,11 @@ class UserProfile extends React.Component {
     this.setState({display: "All"});
   }
 
-  currentUserLikes(id) {
-
-  }
-
   render () {
     const user = this.props.currentUser;
     let photos = [];
     if (this.props.users[user.id] && this.state.display === "All") {
-      photos = this.props.users[user.id].photos;
+      photos = Object.values(this.props.photos);
     }
     if (this.props.photos && this.state.display === "Liked") {
       photos = Object.values(this.props.photos);

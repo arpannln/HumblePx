@@ -24,7 +24,6 @@ class PhotoUploadForm extends React.Component {
     delete this.state["uploadedFile"];
     let submit = {photo: this.state};
     this.props.createPhoto(submit);
-    this.render();
     this.props.history.push('/');
 
   }

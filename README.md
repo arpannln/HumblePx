@@ -16,20 +16,38 @@
 ### User Auth
 
   Built the entire backend to never store passwords and simply use BCrypt to hash into a more secure password digest. Utilized CSS
-  mechanics to create a Sign In modal so the user never has to leave the page. Users are able to register and sign back in to the website.
+mechanics to create a Sign In modal so the user never has to leave the page. Users are able to register and sign back in to the website in a secure manner.
 
 ![Home](https://res.cloudinary.com/arpannln/image/upload/v1518206227/is0fi7x8xvfddcxc9sbh.png)
 
 ### User Profile
 
+  Each user can view their own pictures, and with the nifty help of react we are able to see which photos the currently logged in user likes. The logic for selecting which pictures to display can be seen below: 
+
+```let photos = [];
+    if (this.props.users[user.id] && this.state.display === "All") {
+      photos = Object.values(this.props.photos);
+    }
+    if (this.props.photos && this.state.display === "Liked") {
+      photos = Object.values(this.props.photos);
+      photos = photos.filter( (photo) => photo.currentUserLikes === true);
+    }
+```
+The outer conditionals are necessary to bypass any unwanted asynchronous behavior and then it's just a matter of properly parsing into our state
+
 ![UserProfile](https://res.cloudinary.com/arpannln/image/upload/v1518210578/qsrbfewsmkqn1tkrfekv.png)
 
 ### Photo Upload Modal
+  
+  As previously stated, each user has the ability to upload photos from their computer. Using Cloudinary, these images are then assigned a URL which is then stored in the database. Once again, a modal was implemented to spare the user from having to leave their profile page and for an easy exit back to their profile page. 
+
 
 ![Upload](https://res.cloudinary.com/arpannln/image/upload/v1518210897/szoinoeznp1jugyhondn.png)
 
 
 ### Discover Page
+  
+  Each user also has the 
 
 ![Discover](https://res.cloudinary.com/arpannln/image/upload/v1518210589/xg1zavqmblm4slcb7v0v.png)
 

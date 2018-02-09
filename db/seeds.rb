@@ -44,7 +44,7 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "https:
     caption: "Reminds me of Spider-man"
   )
   Photo.create(title: "Wow what a picture",
-    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518113785/i66enh5c2gffwu0prgsf.jpg",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518199722/yq20iihokmcorbl16mw7.jpg",
     author_id: user2.id,
     caption: "Someone please tell me where this is"
   )

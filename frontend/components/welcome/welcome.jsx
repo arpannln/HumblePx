@@ -16,7 +16,7 @@ const sessionLinks = (removeAllErrors) => (
   </div>
   <h1 className="welcome-greeting">Sit Down, <br/> &nbsp; &nbsp;&nbsp;
     Explore<p className="welcome-greeting-logo">Humble...</p> <br/><br/>
-  <p className= "last-sentence"> Discover Cities Together </p> </h1>
+  <p className="last-sentence"> Discover <span className="cities"> Cities </span> Together </p> </h1>
   </div>
 );
 // {props.location.pathname === '/' ? <Link className="welcome-signup-button" to="/signup">Join Us</Link> : null}
@@ -29,7 +29,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
         <h1 className="nav-bar">
           <h1 className="logo logo-disc">Humble</h1>
           <div className="links">
-            <h2 className="profile-button" onClick={changePage}>Profile</h2>
+            <h2 className="profile-button" onClick={changePage}>Profile &nbsp;<img className="nav-user-photo" src={currentUser.img_url}/> &nbsp; </h2>
             <button className="welcome-logout" onClick={logout}>Log Out</button>
           </div>
         </h1>

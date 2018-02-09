@@ -51,7 +51,7 @@ class PhotoShow extends React.Component {
         <div className="show-photo-holder">
           <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
           <div className="show-photo-caption" >
-            <h1 className="caption"> <h3> {photo.caption} </h3> {color} </h1>
+            <h1 className="caption"> <span> {photo.caption} </span> {color} </h1>
           </div>
         </div>
     </div>

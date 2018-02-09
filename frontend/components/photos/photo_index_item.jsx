@@ -33,7 +33,7 @@ class PhotoIndexItem extends React.Component{
         <img className="single-home-photo" src={photo.img_url} alt={photo.title}/>
         <br></br>
       </Link>
-      <h3 className="photo-caption">{photo.caption} <br></br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; {photo.author.username}
+      <h3 className="photo-caption">{photo.caption} <br></br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; -{photo.author.username}
         <div onClick={ () => this.toggleLike() }>
           {color}
         </div>

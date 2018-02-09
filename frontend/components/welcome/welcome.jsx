@@ -39,7 +39,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
         <PhotosHomepageContainer/>
       </div>) :
       (<div>
-        <h1 className="nav-bar">
+        <h1 className="nav-bar-profile">
           <div>
             <h1 className="logo logo-prof" onClick={changePage}>Humble</h1>
             <button className="discover-button" onClick={changePage}>Discover</button>

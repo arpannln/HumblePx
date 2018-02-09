@@ -1,7 +1,7 @@
 .welcome {
   display: flex;
 }
-.nav-bar {
+.nav-bar, .nav-bar-profile {
   position: fixed;
   margin-top: 15px;
   display: flex;
@@ -12,6 +12,10 @@
   border-top: 2px solid #800000;
   border-bottom: 2px solid #800000;
   z-index: 5;
+}
+
+.nav-bar-profile {
+  position: absolute;
 }
   .logo-prof:hover {
     cursor: pointer;
@@ -59,6 +63,7 @@
   margin-left: 155px;
   margin-right: 200px;
   margin-top: 250px;
+  margin-bottom: 100px;
   flex-direction: row;
   justify-content: space-around;
 }

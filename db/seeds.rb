@@ -9,8 +9,8 @@
 User.destroy_all
 Photo.destroy_all
 
-user1 = User.create(username: "arpan", password: "password", img_url: "http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image-300x300.png", cover_url: "https://images.unsplash.com/photo-1494707633652-f43986561810?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4dfad53b74a1116eef8b47cf50cba066&auto=format&fit=crop&w=1524&q=80" )
-user2 = User.create(username: "DemoUser", password: "password", img_url: "http://www.skywardimaging.com/wp-content/uploads/2015/11/default-user-image-300x300.png", cover_url: "https://images.unsplash.com/photo-1494707633652-f43986561810?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4dfad53b74a1116eef8b47cf50cba066&auto=format&fit=crop&w=1524&q=80")
+user1 = User.create(username: "arpan", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194025/uhzd0spzpw4yviy65j7z.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg" )
+user2 = User.create(username: "DemoUser", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194025/uhzd0spzpw4yviy65j7z.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg")
 
 3.times do
   Photo.create(title: "Wow what a picture",

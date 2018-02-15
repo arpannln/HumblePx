@@ -38,19 +38,13 @@
   margin-top: 100px;
   margin-left: 150px;
   display: flex;
-  white-space: nowrap;
-  overflow: hidden;
-
-  animation: type 3s steps(60, end);
 }
 
   .welcome-statement > p {
     color: red;
   }
 
-  @keyframes type{
-    from { width: 0; }
-  }
+
 
 
 

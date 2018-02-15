@@ -67,7 +67,6 @@
 
 .uploaded-img {
   margin-top: -350px;
-  margin-left: -70px;
   display: flex;
   position: absolute;
   z-index: 100;
@@ -102,7 +101,7 @@
   color: white;
   font-family: "Open Sans";
   font-size: 35px;
-  border: 2px solid black;
+  border: none;
 }
 
 .post-button:hover {

@@ -52,7 +52,16 @@ The outer conditionals are necessary to bypass any unwanted asynchronous behavio
 
 ### Discover Page
   
-  Each user also has the choice of looking for new images posted by other users to like dynamically and save for later browsing. 
+  Each user also has the choice of looking for new images posted by other users to like dynamically and save for later browsing. While fetching photos to display, we can also avoid the N+1 Query Problem by simple adding an includes like so: 
+  
+  ````
+  def show
+    @photo = Photo.find(params[:id]).include(:author)
+    return render json: ["Photo not found"], status: 422 unless @photo
+    render "api/photos/show", status: 200
+  end
+ ````
+ This avoids our database the trouble of having to fetch the photo again when we want the associated user. 
   
 ![Discover](https://res.cloudinary.com/arpannln/image/upload/v1518210589/xg1zavqmblm4slcb7v0v.png)
 
@@ -60,7 +69,26 @@ The outer conditionals are necessary to bypass any unwanted asynchronous behavio
 
 ### Photo Show Modal
 
-  Each photo link has a modal that appears to display the photo, caption, and ability to like the photo. Once again implementing the show as a modal allows for a more fluid discovery experience with the quick exit feature. 
+  Each photo link has a modal that appears to display the photo, caption, and ability to like the photo. Once again implementing the show as a modal allows for a more fluid discovery experience with the quick exit feature. Some neat CSS to help with the modal creation: 
+  
+    .show-photo-back {
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 110%;
+    height: 100%;
+    top: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: 210;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+The associated component is then given an on click attribute which triggers an action to render only the background page
 
 ![Show](https://res.cloudinary.com/arpannln/image/upload/v1518210559/rkzspbjaqiimby3qo53u.png)
 

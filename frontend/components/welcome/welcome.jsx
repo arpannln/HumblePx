@@ -10,7 +10,7 @@ const sessionLinks = (removeAllErrors) => (
     <h1 className="logo">Humble</h1>
     <nav className="login-signup">
       <Link className="login-button" to="/login" onClick={removeAllErrors}>Login</Link> <br/>
-      <Link className="signup-button" to="/signup" onClick={removeAllErrors}><h3 className="signup-text">Sign up!</h3></Link>
+      <Link className="signup-button" to="/signup" onClick={removeAllErrors}><h3 className="signup-text">Sign up</h3></Link>
     </nav>
    </div>
   </div>

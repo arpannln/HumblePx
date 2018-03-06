@@ -44,6 +44,7 @@
   cursor: pointer;
 }
 
+
 .discover-welcome-logout {
   font-family: "Open Sans";
   font-size: 20px;
@@ -229,8 +230,12 @@
   color: #800000;
 }
 
+
 .signup-button:hover{
   background-color: #FF0000;
+  // transform: translate(0px, 5px);
+  // -webkit-transform: translate(0px, 5px);
+
 }
 
 

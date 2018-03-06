@@ -13,6 +13,7 @@
   display: flex;
   z-index: 1000;
   height: 80%;
+  width: 80%;
   border: 2px solid white;
 }
 
@@ -20,14 +21,31 @@
   margin-right: 50px;
 }
 
+.show-photo-holder {
+  margin-left: 200px;
 
+}
 .show-photo-caption {
-  width: 100%;
+  width: 80%;
   height: 70px;
   background: white;
   justify-content: space-between;
   flex-direction: row;
   margin-top: -20px;
+  padding-left: 4px;
+}
+
+.author-holder {
+  margin-left: 65%;
+  margin-right: 10%;
+  width: 80%;
+  justify-content: flex-end;
+}
+.author {
+  width: 80%;
+  font-family: "Brush Script MT";
+  color: white;
+  margin-top: -60px;
 }
 .caption {
   display: flex;

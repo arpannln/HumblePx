@@ -18,7 +18,7 @@ class PhotoShow extends React.Component {
   }
 
   goBackToPhotos(e) {
-    if (e.target.className === "show-photo-back") {
+    if (e.target.className === "show-photo-back" || e.target.className === "show-photo-holder") {
       this.props.history.push('/');
     }
   }
@@ -50,6 +50,9 @@ class PhotoShow extends React.Component {
     <div className="show-photo-back" onClick={this.goBackToPhotos}>
         <div className="show-photo-holder">
           <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
+          <div className="author-holder">
+            <h1 className="author">{photo.author.username}</h1>
+          </div>
           <div className="show-photo-caption" >
             <h1 className="caption"> <span> {photo.caption} </span> {color} </h1>
           </div>

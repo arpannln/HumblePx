@@ -9,8 +9,8 @@ const sessionLinks = (removeAllErrors) => (
    <div className="welcome-banner">
     <h1 className="logo">Humble</h1>
     <nav className="login-signup">
-      <Link className="login-button" to="/login" onClick={removeAllErrors}>Login</Link> <br/>
-      <Link className="signup-button" to="/signup" onClick={removeAllErrors}><h3 className="signup-text">Sign up</h3></Link>
+      <Link className="login-button" to="/login" onClick={removeAllErrors}>LOGIN</Link> <br/>
+      <Link className="signup-button" to="/signup" onClick={removeAllErrors}><h3 className="signup-text">SIGN UP</h3></Link>
     </nav>
    </div>
   </div>
@@ -29,8 +29,8 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
         <h1 className="nav-bar">
           <a className="logo logo-disc" href="#top">Humble</a>
           <div className="links">
-            <h2 className="profile-button" onClick={changePage}>Profile &nbsp;<img className="nav-user-photo" src={currentUser.img_url}/> &nbsp; </h2>
-            <button className="welcome-logout" onClick={logout}>Log Out</button>
+            <h2 className="profile-button" onClick={changePage}> &nbsp;<img className="nav-user-photo" src={currentUser.img_url}/> &nbsp; </h2>
+            <button className="welcome-logout" onClick={logout}>LOG OUT</button>
           </div>
         </h1>
         <span className="welcome-statement">
@@ -42,11 +42,11 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
         <h1 className="nav-bar-profile">
           <div>
             <h1 className="logo logo-prof" onClick={changePage}>Humble</h1>
-            <button className="discover-button" onClick={changePage}>Discover</button>
+            <button className="discover-button" onClick={changePage}>DISCOVER</button>
           </div>
           <div>
-            <Link className="upload-button" to="/upload"> Upload &nbsp; <i className="material-icons">cloud_upload</i></Link>
-            <h1 className="discover-welcome-logout" onClick={logout}>Log Out</h1>
+            <Link className="upload-button" to="/upload"> UPLOAD &nbsp; <i className="material-icons">cloud_upload</i></Link>
+            <h1 className="discover-welcome-logout" onClick={logout}> <h3 className="logout-text">LOG OUT</h3></h1>
           </div>
         </h1>
         <Route exact path="/upload" component={PhotoUploadFormContainer} />

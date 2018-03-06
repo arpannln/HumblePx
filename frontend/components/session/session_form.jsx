@@ -97,8 +97,8 @@ class SessionForm extends React.Component {
           <br/>
           <h3>{this.navLink()}</h3>
           <br/>
-          <input className="submit-button" type="submit" value={this.props.formType}/>
-          <input className="demo-button" value="   Demo " onClick={this.handleDemo}/>
+          <input className="submit-button" type="submit" value={this.props.formType.toUpperCase()}/>
+          <input className="demo-button" value="    DEMO " onClick={this.handleDemo}/>
         </div>
           </form>
       </div>

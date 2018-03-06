@@ -6,6 +6,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "close-canvas-react": "^1.1.0",
     "lodash": "^4.17.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -16,6 +17,8 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
+    "search-input-react": "^1.1.1",
+    "style-loader": "^0.20.2",
     "superagent": "^3.8.2",
     "webpack": "^3.10.0"
   },

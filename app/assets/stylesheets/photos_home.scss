@@ -44,6 +44,21 @@
     color: red;
   }
 
+  .search {
+    display: flex;
+    position: fixed;
+    margin-left: 40%;
+    margin-right: 30%;
+    margin-top: -223.5px;
+    z-index: 5;
+  }
+
+  .search input {
+    width: 300px;
+    height: 25px;
+    font-family: "Open Sans";
+    font-size: 20px;
+  }
 
 
 
@@ -186,9 +201,9 @@
 .home-page{
   position: absolute;
   display: flex;
-  background-image: url(https://images.unsplash.com/photo-1485185281775-beb4c98ee106?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ba905a39478e05ba835c1d222352206c&auto=format&fit=crop&w=1900&q=80);
+  background-image: url(https://res.cloudinary.com/arpannln/image/upload/v1520312928/hey.jpg);
   width: 100%;
-
+  min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;

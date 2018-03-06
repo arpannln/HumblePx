@@ -97,7 +97,7 @@ class PhotoUploadForm extends React.Component {
                 placeholder="Caption"
                 onChange={this.update('caption')}
               />
-             <button className="post-button">Post Photo</button>
+             <button className="post-button">&nbsp;&nbsp;Post Photo</button>
           </div>
       </form>
       </div>

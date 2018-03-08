@@ -21,15 +21,15 @@
 
 .photo-form {
   display: flex;
-  width: 500px;
-  height: 800px;
+  width: 470px;
+  height: 600px;
   margin-right: 100px;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   flex-direction: column;
   border: 2px solid black;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .top-half {
@@ -43,17 +43,17 @@
 
 .photo-dropzone {
   display: flex;
-  width: 60%;
-  height: 200px;
+  width: 24%;
+  height: 100px;
   background-color: black;
   color: white;
   text-align: center;
   align-items: center;
   margin-bottom: 80px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 38%;
+  margin-right: 38%;
   border: 2px solid #800000;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 .photo-dropzone:hover {
   cursor: pointer;
@@ -64,20 +64,20 @@
   position: relative;
   font-family: "Brush Script MT", cursive;
   font-size: 45px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20px;
+  margin-right: 10px;
   width: 100%;
 }
 
 .uploaded-img {
-  margin-top: -300px;
+  margin-top: -210px;
   display: flex;
   position: relative;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 28%;
+  margin-right: 28%;
   z-index: 100;
-  height: 100%;
-  width: 70%;
+  height: 40%;
+  width: 44%;
 }
 
 

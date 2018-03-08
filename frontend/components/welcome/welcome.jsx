@@ -46,7 +46,7 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
           </div>
           <div>
             <Link className="upload-button" to="/upload"> UPLOAD &nbsp; <i className="material-icons">cloud_upload</i></Link>
-            <h1 className="discover-welcome-logout" onClick={logout}> <h3 className="logout-text">LOG OUT</h3></h1>
+            <h1 className="discover-welcome-logout" onClick={logout}> <span className="logout-text">LOG OUT</span></h1>
           </div>
         </h1>
         <Route exact path="/upload" component={PhotoUploadFormContainer} />

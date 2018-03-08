@@ -39,7 +39,6 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    console.log(this.state);
     if (this.props.sessionErrors.length) {
       this.props.removeAllErrors();
     }
@@ -98,7 +97,7 @@ class SessionForm extends React.Component {
           <h3>{this.navLink()}</h3>
           <br/>
           <input className="submit-button" type="submit" value={this.props.formType.toUpperCase()}/>
-          <input className="demo-button" value="DEMO" onClick={this.handleDemo}/>
+          <input className="demo-button" type="submit" value="DEMO" onClick={this.handleDemo}/>
         </div>
           </form>
       </div>

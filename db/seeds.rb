@@ -12,7 +12,7 @@ Photo.destroy_all
 user1 = User.create(username: "Arpan", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194025/uhzd0spzpw4yviy65j7z.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg" )
 user2 = User.create(username: "DemoUser", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518738071/profile.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg")
 
-3.times do
+
   Photo.create(title: "Wow what a picture",
     img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518114010/r4npg7yuulprzju5lluk.jpg",
     author_id: user2.id,
@@ -51,7 +51,7 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "https:
   Photo.create(title: "Wow what a picture",
     img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518113750/llyibukl6e4t4l8gtmpu.jpg",
     author_id: user2.id,
-    caption: "City of Love?"
+    caption: "Paris is truly the city of love"
   )
   Photo.create(title: "Wow what a picture",
     img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518113720/jgrrgaexyomrgtcixcmp.jpg",
@@ -84,11 +84,46 @@ user2 = User.create(username: "DemoUser", password: "password", img_url: "https:
     caption: "You don't understand how much I love SF"
   )
 
+  Photo.create(title: "Wow what a picture",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1520913041/photo-1465446861595-68b66a78521e.jpg",
+    author_id: user2.id,
+    caption: "Speeding through China woooo!"
+  )
+
+  Photo.create(title: "Wow what a picture",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1520913029/photo-1499856871958-5b9627545d1a.jpg",
+    author_id: user1.id,
+    caption: "Paris is something else with that horizon..."
+  )
 
 
+  Photo.create(title: "Wow what a picture",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1520913024/photo-1514276637766-4c641e206f7d.jpg",
+    author_id: user2.id,
+    caption: "Another reason why I'll never leave SF <3"
+  )
+
+  Photo.create(title: "Wow what a picture",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1520913020/photo-1425321395722-b1dd54a97cf3.jpg",
+    author_id: user1.id,
+    caption: "Even in the morning nothing compares with SF"
+  )
+
+  Photo.create(title: "Wow what a picture",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1520913015/photo-1475189778702-5ec9941484ae.jpg",
+    author_id: user2.id,
+    caption: "Since when does SF look like Hawaii?"
+  )
+
+  Photo.create(title: "Wow what a picture",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1520913013/photo-1467086674598-290e1df3352f.jpg",
+    author_id: user1.id,
+    caption: "Catching that smexy Golden Gate Bridge in SF at night"
+  )
 
 
-
-
-
-end
+  Photo.create(title: "Wow what a picture",
+    img_url: "https://res.cloudinary.com/arpannln/image/upload/v1520913005/photo-1489625549274-f51a27bd787a.jpg",
+    author_id: user1.id,
+    caption: "The heart of SF, the perfect bridge in the perfect horizon"
+  )

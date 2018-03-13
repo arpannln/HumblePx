@@ -67,7 +67,7 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="session-form">
+      <div className="session-form animated fadeInRight">
           <form onSubmit={this.handleSubmit} className="login-form">
           <Link className="close-form" to="/">X</Link>
         <div className="session-box">

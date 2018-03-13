@@ -22,14 +22,27 @@ const sessionLinks = (removeAllErrors) => (
 // {props.location.pathname === '/' ? <Link className="welcome-signup-button" to="/signup">Join Us</Link> : null}
 
 
-const personalWelcome = (currentUser, logout, page, changePage) => (
+const personalWelcome = (currentUser, logout, page, changePage) => {
+  // var myNav = document.getElementById('mynav');
+  // window.onscroll = function () {
+  //   "use strict";
+  //   if (document.body.scrollTop > 300) {
+  //     console.log(document.body.scrollTop);
+  //     myNav.classList.add("nav-transparent");
+  //   }
+  //   else {
+  //
+  //     myNav.classList.remove("nav-transparent");
+  //   }
+  // };
+return (
   <div className="home-page">
     {page ?
       (<div>
-        <h1 className="nav-bar">
+        <h1 className="nav-bar" id="mynav">
           <a className="logo logo-disc" href="#top">Humble</a>
           <div className="links">
-            <h2 className="profile-button" onClick={changePage}> &nbsp;<img className="nav-user-photo" src={currentUser.img_url}/> &nbsp; </h2>
+            <a href="#top" className="profile-button" onClick={changePage}> <img className="nav-user-photo" src={currentUser.img_url}/> &nbsp; </a>
             <button className="welcome-logout" onClick={logout}>LOG OUT</button>
           </div>
         </h1>
@@ -54,12 +67,24 @@ const personalWelcome = (currentUser, logout, page, changePage) => (
       </div>)
 
     }
-  </div>
-);
+  </div> );
+};
 
 
-const Welcome = ({currentUser, logout, removeAllErrors, page, changePage}) => (
-  currentUser ? personalWelcome(currentUser, logout, page, changePage) : sessionLinks(removeAllErrors)
-);
+const Welcome = ({currentUser, logout, removeAllErrors, page, changePage}) => {
+  // var myNav = document.getElementById('mynav');
+  // window.onscroll = function () {
+  //   "use strict";
+  //   if (document.body.scrollTop > 300) {
+  //     console.log(document.body.scrollTop);
+  //     myNav.classList.add("nav-transparent");
+  //   }
+  //   else {
+  //
+  //     myNav.classList.remove("nav-transparent");
+  //   }
+  // };
+  return currentUser ? personalWelcome(currentUser, logout, page, changePage) : sessionLinks(removeAllErrors);
+};
 
 export default Welcome;

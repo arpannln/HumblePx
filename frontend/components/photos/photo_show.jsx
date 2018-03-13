@@ -48,7 +48,7 @@ class PhotoShow extends React.Component {
     if (photo) {
     return (
     <div className="show-photo-back" onClick={this.goBackToPhotos}>
-        <div className="show-photo-holder">
+        <div className="show-photo-holder animated zoomIn">
           <img className="show-photo-image" src={photo.img_url} alt={photo.title}></img>
           <div className="author-holder">
             <h1 className="author">{photo.author.username}</h1>

@@ -108,6 +108,7 @@
   font-size: 21.5px;
   margin-top: 10px;
   margin-right: 160px;
+  text-decoration: none;
 }
 
 .profile-button:hover, .discover-button:hover{
@@ -119,6 +120,9 @@
 .nav-user-photo {
   width: 30px;
   height: 30px;
+}
+.nav-user-photo:hover {
+  opacity: 0.8;
 }
 
 
@@ -181,6 +185,12 @@
   from { width: 0; }
 }
 
+
+.nav-transparent {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
 .logo{
   font-family: "Brush Script MT", cursive;
   font-size: 50px;
@@ -189,6 +199,7 @@
   display: flex;
   margin-left: 100px;
   margin-top: -10px;
+  transition: all 0.5s ease;
 }
 
 .login-signup{
@@ -244,6 +255,7 @@
   background-color: #FF0000;
   // transform: translate(0px, 5px);
   // -webkit-transform: translate(0px, 5px);
+
 
 }
 

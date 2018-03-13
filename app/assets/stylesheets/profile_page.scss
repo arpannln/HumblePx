@@ -25,6 +25,10 @@
   color: red;
 }
 
+.discover-button {
+  text-shadow: 2px 2px black;
+}
+
 
 body {
   background-color: black;
@@ -60,7 +64,7 @@ body {
 .profile-all-photos {
   position: absolute;
   display: flex;
-  margin-top: 870px;
+  margin-top: 890px;
   margin-left: 155px;
   margin-right: 200px;
   flex-direction: row;
@@ -84,7 +88,7 @@ body {
   font-family: "Open Sans";
   font-size: 25px;
   margin-left: 250px;
-  margin-top: 0px;
+  margin-top: 20px;
   text-decoration: none;
   -webkit-text-stroke: 1px white;
   transition: all 0.5s ease;

@@ -9,13 +9,16 @@
   height: 50px;
   background-color: rgba(0, 0, 0, 0.6);
   justify-content: space-between;
-  border-top: 2px solid #800000;
   border-bottom: 2px solid #800000;
   z-index: 5;
+  text-shadow: 2px 2px black;
 }
 
 .nav-bar-profile {
   position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  text-shadow: 2px 2px black;
 }
   .logo-prof:hover {
     cursor: pointer;
@@ -49,7 +52,7 @@
     position: fixed;
     margin-left: 40%;
     margin-right: 30%;
-    margin-top: -238.5px;
+    margin-top: -240px;
     z-index: 5;
   }
 

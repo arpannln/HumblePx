@@ -23,6 +23,19 @@ class PhotosHomepage extends React.Component {
   }
 
   render() {
+    // var myNav = document.getElementById('mynav');
+    // var body = document.getElementById('photos')
+    // window.onscroll = function () {
+    //   "use strict";
+    //   console.log(body.scrollTop);
+    //   if (document.scrollTop > 100) {
+    //     myNav.classList.add("nav-transparent");
+    //   }
+    //   else {
+    //
+    //     myNav.classList.remove("nav-transparent");
+    //   }
+    // };
     var photos = this.props.photos;
     if (this.state.search) {
       photos = photos.filter( photo => photo.caption.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1);
@@ -39,7 +52,7 @@ class PhotosHomepage extends React.Component {
           />
         </form>
 
-        <div className="photos-all">
+        <div className="photos-all" id="photos">
           {
             photos.map( photo => (
               <PhotoIndexItemContainer key={photo.id} id={photo.id}/>

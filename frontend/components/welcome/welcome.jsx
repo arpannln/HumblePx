@@ -14,7 +14,7 @@ const sessionLinks = (removeAllErrors) => (
     </nav>
    </div>
   </div>
-  <h1 className="welcome-greeting animated fadeInLeft">Sit Down, <br/> &nbsp; &nbsp;&nbsp;
+  <h1 className="welcome-greeting animated fadeInLeft">Sit Down,
     Explore<p className="welcome-greeting-logo">Humble...</p> <br/><br/>
     <p className="last-sentence"> Photograph <span className="cities"> &nbsp; Cities </span> &nbsp; Together </p>
 </h1>

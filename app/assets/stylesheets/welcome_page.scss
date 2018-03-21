@@ -148,17 +148,19 @@
   position: absolute;
   z-index: 0;
   display: flex;
-  text-shadow: 2px 2px black;
+  text-shadow: 3px 3px 3px black;
   // -webkit-text-stroke: .3px white;
-  max-width: 90%;
+  min-width: 200px;
 }
 
 .last-sentence {
+  position: absolute;
   display: flex;
+  flex-direction: row;
   color: white;
-  margin-top: 200px;
-  margin-left: -40%;
-  text-shadow: 2px 2px black;
+  margin-top: 10%;
+  margin-left: -50%;
+  text-shadow: 3px 3px 3px black;
 }
 
 

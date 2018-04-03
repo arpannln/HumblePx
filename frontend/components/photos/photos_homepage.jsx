@@ -9,6 +9,7 @@ class PhotosHomepage extends React.Component {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
+
     this.state = {
       search: null
     };
@@ -37,6 +38,7 @@ class PhotosHomepage extends React.Component {
     //   }
     // };
     var photos = this.props.photos;
+
     if (this.state.search) {
       photos = photos.filter( photo => photo.caption.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1);
     }

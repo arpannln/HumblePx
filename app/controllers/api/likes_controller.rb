@@ -2,8 +2,7 @@ class Api::LikesController < ApplicationController
   def create
     @like = Like.new(like_params)
     @like.user_id = current_user.id
-    @dupe = Like.find_by({user_id: current_user.id, photo_id: @like.photo_id})
-    return if @dupe
+    return if Like.find_by({user_id: current_user.id, photo_id: @like.photo_id})
     @photo = Photo.find(@like.photo_id)
     if @like.save
       render "api/photos/show"

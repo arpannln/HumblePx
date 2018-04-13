@@ -10,7 +10,7 @@ User.destroy_all
 Photo.destroy_all
 
 user1 = User.create(username: "Arpan", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194025/uhzd0spzpw4yviy65j7z.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg" )
-user2 = User.create(username: "DemoUser", password: "password", img_url: "https://res.cloudinary.com/arpannln/image/upload/v1518738071/profile.png", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg")
+user2 = User.create(username: "DemoUser", password: "password", img_url: "http://res.cloudinary.com/arpannln/image/upload/a_90/v1522350995/IMG_2055.jpg", cover_url: "https://res.cloudinary.com/arpannln/image/upload/v1518194071/zgarjuicoegk72fv4zah.jpg")
 
 
   Photo.create(title: "Wow what a picture",

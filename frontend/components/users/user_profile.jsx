@@ -46,7 +46,7 @@ class UserProfile extends React.Component {
      <img className="user-cover" src={user.cover_url}/>
      <h1 className="profile-message"> <p>Share</p> &nbsp;a City...</h1>
      <img className="user-photo" src={user.img_url}/>
-     <nav className="profile-tab"> <h1 className="my-photos-link" onClick={this.showAll}>My Photos</h1> <h1 className="my-photos-link" onClick={this.showLiked}>Liked Photos</h1></nav>
+     <nav className="profile-tab"> <h1 className="my-photos-link" onClick={this.showAll}>My Photos</h1><h1 className="my-photos-link" onClick={this.showLiked}>Liked Photos</h1></nav>
        <div className="profile-all-photos">
          {
            photos.map( photo => (

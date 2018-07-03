@@ -1,12 +1,12 @@
 .welcome-page{
   position: absolute;
   display: flex;
-  background: url(https://res.cloudinary.com/arpannln/image/upload/v1528952103/homescreen.jpg) no-repeat center center fixed;
+  background: url(https://images.unsplash.com/photo-1516844113229-18646a422956?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=840954969b28155686dc553bcc926bf0&auto=format&fit=crop&w=1049&q=80) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  opacity: 0.75;
   width: 100%;
   height: 100vh;
   z-index: 0;
@@ -15,12 +15,12 @@
 .welcome-banner{
   display: flex;
   justify-content: space-between;
+  position: fixed;
   width: 100%;
   height: 50px;
   /* background-color: rgba(138,43,226,0.4); */
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(0,0,0,0);
   /* border-top: 1px solid lightblue; */
-  border-bottom: 2px solid #800000;
 }
 .welcome-logout {
   font-family: "Open Sans";
@@ -28,8 +28,8 @@
   display: flex;
   width: 120px;
   height: 35px;
-  color: white;
-  background-color: #800000;
+  color: rgba(256,256,256,1);
+  background-color: #B9090B;
   border-radius: 5px;
   margin-left: 60px;
   margin-right: 10px;
@@ -67,7 +67,7 @@
 }
 
 .discover-welcome-logout:hover {
-  background-color: red;
+  color: red;
   cursor: pointer;
 }
 .upload-button {
@@ -95,8 +95,8 @@
   border: none;
   font-size: 16px;
   transition: all 0.5s ease;
-  margin-left: 250px;
-  margin-top: -86px;
+  margin-left: 270px;
+  margin-top: -74px;
 }
 
 .profile-button {
@@ -139,38 +139,35 @@
 } */
 /* this following animation was borrowed from Sohrab Hejazi from Stack Overflow*/
 .welcome-greeting{
-  color: lightgrey;
   font-family: "Open Sans";
   font-weight: 600;
-  font-size: 150%;
-  margin-top: 27.5%;
-  margin-left: 5%;
+  font-size: 80%;
   position: absolute;
-  z-index: 0;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20%;
+  z-index: 1;
   display: flex;
-  text-shadow: 3px 3px 3px black;
-  // -webkit-text-stroke: .3px white;
-  min-width: 200px;
-}
-
-.last-sentence {
-  font-size: 150%;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
   color: white;
-  margin-top: 40%;
-  margin-left: 10%;
+  text-shadow: 3px 3px 3px black;
+  width: 30%;
+  min-width: 400px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.caption {
+  font-size: 150%;
+  justify-content: center;
+  margin-top: -18%;
+}
+
+.splash-logo {
+  margin-top: 0px;
+  font-size: 750%;
+  color: #B9090B;
   text-shadow: 3px 3px 3px black;
 }
-
-
-
-.cities {
-  color: red;
-  margin: 0px 10px;
-}
-
 
 
 .welcome-greeting-logo{
@@ -194,13 +191,13 @@
 }
 
 .logo{
-  font-family: "Brush Script MT", cursive;
-  font-size: 50px;
+  font-family: "Open Sans";
+  font-size: 40px;
   color: red;
-  -webkit-text-stroke: .1px #800000;
+  -webkit-text-stroke: .1px #B9090B;
   display: flex;
   margin-left: 100px;
-  margin-top: -10px;
+  margin-top: 0px;
   transition: all 0.5s ease;
 }
 
@@ -232,10 +229,10 @@
   width: 120px;
   height: 35px;
   color: white;
-  background-color: #800000;
   border-radius: 5px;
   margin-top: 7.5px;
   margin-right: 5px;
+  background-color: #B9090B;
   justify-content: center;
   text-decoration: none;
   text-align: center;
@@ -249,7 +246,7 @@
 
 }
 .login-button:hover{
-  color: #800000;
+  color: #B9090B;
 }
 
 

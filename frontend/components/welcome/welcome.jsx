@@ -14,10 +14,11 @@ const sessionLinks = (removeAllErrors) => (
     </nav>
    </div>
   </div>
-  <h1 className="welcome-greeting animated fadeInLeft">Sit Down,
-    Explore<p className="welcome-greeting-logo">Humble...</p> <br/><br/>
-    <p className="last-sentence"> Photograph  &nbsp; &nbsp;<span className="cities"> Cities </span> Together </p>
-</h1>
+    <div className="welcome-greeting animated fadeInLeft">
+      <h1 className="splash-logo"> Humble
+      </h1>
+      <h1 className="caption"> The City Photography Community </h1>
+    </div>
   </div>
 );
 // {props.location.pathname === '/' ? <Link className="welcome-signup-button" to="/signup">Join Us</Link> : null}

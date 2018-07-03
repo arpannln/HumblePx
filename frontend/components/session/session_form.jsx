@@ -56,6 +56,13 @@ class SessionForm extends React.Component {
     this.props.login({user});
   }
 
+  closeModal(e) {
+    console.log(e.target);
+    if (e.target.className === "session-holder") {
+      this.props.history.push('/');
+    }
+    console.log("hi");
+  }
 
   navLink() {
     if (this.props.formType === 'Login') {
@@ -67,12 +74,13 @@ class SessionForm extends React.Component {
 
   render() {
     return (
+    <div className="session-holder" onClick={(e) => {this.closeModal(e)}}>
       <div className="session-form animated fadeIn">
           <form onSubmit={this.handleSubmit} className="login-form">
-          <Link className="close-form" to="/">X</Link>
+          <Link className="close-form" to="/"></Link>
         <div className="session-box">
           <h1 className="session-label">{
-          this.props.formType === 'Login' ? 'Welcome Back!' : 'Join Us'}</h1>
+          this.props.formType === 'Login' ? 'Welcome' : 'Join Us'}</h1>
           <label className="errors">
             {
               <ul>{this.props.sessionErrors ? this.props.sessionErrors[0] : ""}</ul>
@@ -101,6 +109,7 @@ class SessionForm extends React.Component {
         </div>
           </form>
       </div>
+    </div>
     );
   }
 }

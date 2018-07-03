@@ -1,56 +1,59 @@
 .session-form {
   font-family: "Open Sans";
   position: absolute;
-  border-radius: 25px;
+  border-radius: 5px;
   color: white;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.9);
   display: flex;
-  z-index: 1;
-  margin-left: 60%;
-  margin-top: 12%;
-  margin-right: 20%;
-  margin-bottom: 10%;
+  z-index: 10;
   /* padding-top: 10%;
   padding-bottom: 10%; */
   /* padding: 5%; */
-  width: 290px;
+  width: 300px;
   height: 370px;
   justify-content: center;
-  box-shadow: 0px 0px 1px 1px white;
+  box-shadow: 0px 0px 3px 3px grey;
 }
 
 .option {
   color: white;
   text-decoration: none;
   /* font-family: "Brush Script MT", cursive; */
-  font-size: 14px;
-  margin-left: 55px;
+  font-size: 13px;
+  margin-left: 35px;
   transition: all 0.5s ease;
 }
 
 
 .option:hover {
-  color: red;
+  color: #B9090B;
 }
 .password, .username {
-  font-size: 16.5px;
+  font-size: 15px;
   display: flex;
 }
 
 .username {
   margin-top: 15px;
+  margin-left: -15px;
 }
 .password {
-  margin-left: 5px;
+  margin-left: -10px;
+}
+
+.login {
+  height: 20px;
+  width: 130px;
+  margin-left: 2px;
 }
 
 .submit-button, .demo-button {
   font-size: 12px;
   display: flex;
-  margin-left: 80px;
-  background-color: #800000;
+  margin-left: 42px;
+  background-color: #B9090B;
   color: white;
-  width: 30%;
+  width: 50%;
   height: 24.5px;
   margin-bottom: 5%;
   justify-content: center;
@@ -60,7 +63,6 @@
   text-align: center;
 }
 .demo-button {
-  width: 30%;
   margin-bottom: 15px;
   height: 24px;
 }
@@ -69,10 +71,6 @@
 .submit-button:hover, .demo-button:hover {
   cursor: pointer;
   background-color: red;
-  width: 33%;
-  height: 26px;
-  margin-left: 76px;
-  font-size: 13px;
 }
 
 .session-label {
@@ -93,20 +91,19 @@
   margin-right: 20px;
 }
 
-.close-form{
-  display: flex;
-  color: #800000;
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
-  text-decoration: none;
-  margin-top: 5px;
-  margin-right: 10px;
-  font-size: 25px;
-  margin-left: 255px;
-  width: 20px;
-}
 
 .close-form:hover{
   color: red;
+}
+.session-holder {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
 .session-box {

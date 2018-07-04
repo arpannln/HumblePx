@@ -57,11 +57,9 @@ class SessionForm extends React.Component {
   }
 
   closeModal(e) {
-    console.log(e.target);
     if (e.target.className === "session-holder") {
       this.props.history.push('/');
     }
-    console.log("hi");
   }
 
   navLink() {
@@ -83,7 +81,7 @@ class SessionForm extends React.Component {
           this.props.formType === 'Login' ? 'Welcome' : 'Join Us'}</h1>
           <label className="errors">
             {
-              <ul>{this.props.sessionErrors ? this.props.sessionErrors[0] : ""}</ul>
+              <ul>{this.props.sessionErrors ? this.props.sessionErrors[0] : " "}</ul>
             }
           </label>
           <label className="username">Username: &nbsp; &nbsp;

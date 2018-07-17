@@ -32,7 +32,7 @@ class PhotosHomepage extends React.Component {
     console.log(window.scrollY);
     let navBar = document.querySelector('.nav-bar');
     if (window.scrollY === 0) {
-      navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+      navBar.style.backgroundColor = 'rgba(0, 0, 0, 1)';
 
     } else {
       navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';

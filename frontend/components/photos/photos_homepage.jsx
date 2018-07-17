@@ -17,10 +17,26 @@ class PhotosHomepage extends React.Component {
   }
   componentDidMount() {
     this.props.fetchAllPhotos();
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleChange(e) {
     this.setState( {search: this.refs.filterTextInput.value });
+  }
+
+  handleScroll() {
+    console.log(window.scrollY);
+    let navBar = document.querySelector('.nav-bar');
+    if (window.scrollY === 0) {
+      navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+
+    } else {
+      navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    }
   }
 
   render() {
